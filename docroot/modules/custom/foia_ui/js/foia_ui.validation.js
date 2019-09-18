@@ -15,6 +15,17 @@
         return value <= Number(target.val());
     }, "Please enter a lesser value." );
 
+      // lessThanEqualToNA
+      $.validator.addMethod( "lessThanEqualToNA", function( value, element, param ) {
+        var target = $( param );
+        // Treat N/A like 0.
+        if ( value == "N/A" || value == "n/a" )
+          value = 0;
+        if ( target == "N/A" || value == "n/a" )
+          target = 0;
+        return value <= Number(target.val());
+    }, "Please enter a lesser value." );
+
        // greaterThanEqualTo
       $.validator.addMethod( "greaterThanEqualTo", function( value, element, param ) {
         var target = $( param );
@@ -322,6 +333,81 @@
         greaterThanZero: true,
         messages: {
           greaterThanEqualTo: "Must be greater than or equal to the lowest number of days."
+        }
+      });
+
+      // For the next 9 rules, each is comparing the value to the one lower
+      // than it ( i.e., field 10 is less than field 9, field 9 is less than
+      // field 8, etc).
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 10th
+      $( "#edit-field-overall-vic5-num-day-10-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-9-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"9th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 9th
+      $( "#edit-field-overall-vic5-num-day-9-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-8-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"8th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 8th
+      $( "#edit-field-overall-vic5-num-day-8-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-7-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"7th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 7th
+      $( "#edit-field-overall-vic5-num-day-7-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-6-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"6th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 6th
+      $( "#edit-field-overall-vic5-num-day-6-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-5-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"5th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 5th
+      $( "#edit-field-overall-vic5-num-day-5-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-4-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"4th\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 4th
+      $( "#edit-field-overall-vic5-num-day-4-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-3-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"3d\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 3d
+      $( "#edit-field-overall-vic5-num-day-3-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-2-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"2d\"."
+        }
+      });
+
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 2d
+      $( "#edit-field-overall-vic5-num-day-2-0-value").rules( "add", {
+        lessThanEqualToNA: "#edit-field-overall-vic5-num-day-1-0-value",
+        messages: {
+          lessThanEqualToNA: "This should be less than the number of days for \"1st\"."
         }
       });
 
