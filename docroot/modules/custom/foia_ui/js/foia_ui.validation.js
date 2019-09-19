@@ -52,6 +52,11 @@
         return value > 0;
       }, "Please enter a value greater than zero." );
 
+      // notNegative
+      $.validator.addMethod( "notNegative", function( value, element, param ) {
+        return value >= 0;
+      }, "Please enter zero or a positive number." );
+
       // ifGreaterThanZeroComp
       jQuery.validator.addMethod("ifGreaterThanZeroComp", function(value, element, params) {
         var elementAgencyComponent = $(element).parents('.paragraphs-subform').find("select[name*='field_agency_component']").val();
@@ -281,6 +286,15 @@
           equalTo: "Must match V.A. Agency Overall Number of Requests Processed in Fiscal Year"
         }
       });
+
+      // V.B. (2) (Component) Number of Times "Other" Reason Was Relied Upon
+      $( "#edit-field-foia-requests-vb2-0-subform-field-foia-req-vb2-info-0-subform-field-num-relied-upon-0-value").rules( "add", {
+        notNegative: true,
+        messages: {
+          notNegative: "Must be a zero or a positive number."
+        }
+      });
+
 
       // VI.A. Agency Overall Number of Appeals Processed in Fiscal Year
       $( "#edit-field-overall-via-app-proc-yr-0-value").rules( "add", {
