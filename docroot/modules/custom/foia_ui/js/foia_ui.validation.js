@@ -853,6 +853,40 @@
         lessThanEqualToNA: "#edit-field-overall-xiic-num-days-1-0-value",
         messages: {
           lessThanEqualToNA: "This should be less than the number of days for \"Overall\"."
+
+      // XII.D.(1). Number Received During Fiscal Year from Current Annual Report
+      $( "input[name*='field_foia_xiid1']").filter("input[name*='field_received_cur_yr']").each(function() {
+        $(this).rules( "add", {
+          equalToComp: $( "input[name*='field_foia_requests_va']").filter("input[name*='field_req_received_yr']"),
+          messages: {
+            equalToComp: "Must match V.A.(1). Number of Requests Received in Fiscal Year for corresponding agency/component"
+          }
+        });
+      });
+
+      // XII.D.(1). Number Processed During Fiscal Year from Current Annual Report
+      $( "input[name*='field_foia_xiid1']").filter("input[name*='field_proc_cur_yr']").each(function() {
+        $(this).rules( "add", {
+          equalToComp: $( "input[name*='field_foia_requests_va']").filter("input[name*='field_req_processed_yr']"),
+          messages: {
+            equalToComp: "Must match V.A.(1). Number of Requests Processed in Fiscal Year for corresponding agency/component"
+          }
+        });
+      });
+
+      // XII.D.(1). Agency Overall Number Received During Fiscal Year from Current Annual Report
+      $( "#edit-field-overall-xiid1-received-cur-0-value").rules( "add", {
+        equalTo: "#edit-field-overall-req-received-yr-0-value",
+        messages: {
+          equalTo: "Must match V.A.(1). Agency Overall Number of Requests Received in Fiscal Year",
+        }
+      });
+
+      // XII.D.(1). Agency Overall Number Processed During Fiscal Year from Current Annual Report
+      $( "#edit-field-overall-xiid1-proc-cur-yr-0-value").rules( "add", {
+        equalTo: "#edit-field-overall-req-processed-yr-0-value",
+        messages: {
+          equalTo: "Must match V.A.(1). Agency Overall Number of Requests Processed in Fiscal Year",
         }
       });
 
