@@ -1,0 +1,14 @@
+uuid: 1a08f484-67d8-40a5-be7e-5d0015fb8a14
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: 'For docx generation.'
+id: node.node_to_docx
+label: 'Node to docx'
+targetEntityType: node
+cache: true

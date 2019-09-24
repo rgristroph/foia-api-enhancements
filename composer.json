@@ -39,6 +39,7 @@
         "drupal/paragraphs": "^1.8",
         "drupal/password_policy": "^3.0@alpha",
         "drupal/qa_accounts": "^1.0.0-alpha1",
+        "drupal/reference_table_formatter": "^1.0@RC",
         "drupal/restui": "^1.15",
         "drupal/roleassign": "^1.0@alpha",
         "drupal/rules": "^3.0@alpha",
@@ -46,6 +47,7 @@
         "drupal/shield": "^1.0.0",
         "drupal/simplesamlphp_auth": "^3.0",
         "drupal/swiftmailer": "^1.0",
+        "drupal/table_field_group": "^1.2",
         "drupal/tablefield": "^2.0@alpha",
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_data_export": "^1.0",
@@ -159,7 +161,7 @@
             "@composer install --ansi"
         ],
         "post-drupal-scaffold-cmd": [
-            "cd docroot && patch -p1 <../patches/htaccess-saml.patch"
+            "# Fix Later -RGR cd docroot && patch -p1 <../patches/htaccess-saml.patch"
         ]
     }
 }

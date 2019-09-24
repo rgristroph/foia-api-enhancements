@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1fdaa5fe9f849c7fcbcacadec33f2f9",
+    "content-hash": "7e67048a3b08c5b7384d9b971973c459",
     "packages": [
         {
             "name": "acquia/blt",
@@ -6138,7 +6138,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1527030784",
+                    "datestamp": "1568446684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6214,7 +6214,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.8",
-                    "datestamp": "1560872886",
+                    "datestamp": "1565730484",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6490,7 +6490,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.5",
-                    "datestamp": "1564152185",
+                    "datestamp": "1568318589",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6909,7 +6909,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.8",
-                    "datestamp": "1562692984",
+                    "datestamp": "1568049785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7352,7 +7352,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1563995941",
+                    "datestamp": "1567099985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8316,7 +8316,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.8",
-                    "datestamp": "1553618281",
+                    "datestamp": "1565881389",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8632,6 +8632,57 @@
             }
         },
         {
+            "name": "drupal/reference_table_formatter",
+            "version": "1.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/reference_table_formatter.git",
+                "reference": "8.x-1.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/reference_table_formatter-8.x-1.0-rc4.zip",
+                "reference": "8.x-1.0-rc4",
+                "shasum": "e0b4bf0600432e3abfca67864ed76c03dbcbacdb"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc4",
+                    "datestamp": "1470138840",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                }
+            ],
+            "description": "Display fields on the target of a reference in a table.",
+            "homepage": "https://www.drupal.org/project/reference_table_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/reference_table_formatter"
+            }
+        },
+        {
             "name": "drupal/restui",
             "version": "1.17.0",
             "source": {
@@ -8767,7 +8818,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha4",
-                    "datestamp": "1526654284",
+                    "datestamp": "1566193991",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9603,6 +9654,61 @@
             }
         },
         {
+            "name": "drupal/table_field_group",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/table_field_group.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/table_field_group-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "db2ee7610e15eb17b57d2b49a65fb84cf181b66a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/field_group": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1565264885",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Legendre (jerome legendre)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/jerome-legendre",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Field Group Table with fields in columns.",
+            "homepage": "https://drupal.org/project/table_field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/table_field_group",
+                "issues": "https://www.drupal.org/project/issues/table_field_group"
+            }
+        },
+        {
             "name": "drupal/tablefield",
             "version": "2.0.0-alpha3",
             "source": {
@@ -9626,7 +9732,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha3",
-                    "datestamp": "1556720881",
+                    "datestamp": "1568823337",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -10082,7 +10188,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.3",
-                    "datestamp": "1563460085",
+                    "datestamp": "1566209286",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18971,6 +19077,7 @@
         "drupal/maillog": 20,
         "drupal/node_revision_delete": 10,
         "drupal/password_policy": 15,
+        "drupal/reference_table_formatter": 5,
         "drupal/roleassign": 15,
         "drupal/rules": 15,
         "drupal/tablefield": 15,

@@ -99,6 +99,7 @@ password_policy_length: 3.0.0-alpha4
 path: 8.4.5
 quickedit: 8.4.5
 rdf: 8.4.5
+reference_table_formatter: 1.0.0-rc4
 rest: 8.4.5
 restui: 1.15.0
 roleassign: 1.0.0-alpha2
@@ -114,6 +115,7 @@ simplesamlphp_auth: 3.0.0-rc2
 swiftmailer: 1.0.0-beta1
 syslog: 8.4.5
 system: 8.4.5
+table_field_group: 1.2.0
 tablefield: 2.0.0-alpha3
 tablefield_cellspan: 2.0.0-alpha3
 tablefield_required: 2.0.0-alpha3

@@ -1,0 +1,14 @@
+uuid: 2643bbcd-03c2-495b-ad68-0c7a8a117465
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - paragraphs
+third_party_settings:
+  lightning_core:
+    description: 'For docx conversion'
+id: paragraph.node_to_docx
+label: 'Node to docx'
+targetEntityType: paragraph
+cache: true

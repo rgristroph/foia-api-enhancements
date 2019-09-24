@@ -113,6 +113,7 @@ module:
   swiftmailer: 0
   syslog: 0
   system: 0
+  table_field_group: 0
   tablefield: 0
   tablefield_cellspan: 0
   tablefield_required: 0
