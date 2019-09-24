@@ -428,6 +428,20 @@ third_party_settings:
         caption: ''
         required_fields: false
       label: 'IV. EXEMPTION 3 STATUTES'
+    group_v_a_foia_requests_received:
+      children:
+        - field_foia_requests_va
+      parent_name: ''
+      weight: 3
+      format_type: table
+      format_settings:
+        id: ''
+        classes: ''
+        fieldtitle: 1
+        wrapper: '1'
+        caption: ''
+        required_fields: false
+      label: 'V.A. FOIA REQUESTS -- RECEIVED, PROCESSED AND PENDING FOIA REQUESTS'
 id: node.annual_foia_report_data.node_to_docx
 targetEntityType: node
 bundle: annual_foia_report_data
@@ -440,7 +454,7 @@ content:
     third_party_settings: {  }
   field_admin_app_via:
     type: entity_reference_revisions_entity_view
-    weight: 72
+    weight: 73
     label: above
     settings:
       view_mode: default
@@ -449,7 +463,7 @@ content:
     region: content
   field_admin_app_vib:
     type: entity_reference_revisions_entity_view
-    weight: 76
+    weight: 77
     label: above
     settings:
       view_mode: default
@@ -458,7 +472,7 @@ content:
     region: content
   field_admin_app_vic1:
     type: entity_reference_revisions_entity_view
-    weight: 5
+    weight: 6
     region: content
     label: above
     settings:
@@ -467,7 +481,7 @@ content:
     third_party_settings: {  }
   field_admin_app_vic2:
     type: entity_reference_revisions_entity_view
-    weight: 36
+    weight: 37
     region: content
     label: above
     settings:
@@ -476,7 +490,7 @@ content:
     third_party_settings: {  }
   field_admin_app_vic3:
     type: entity_reference_revisions_entity_view
-    weight: 38
+    weight: 39
     region: content
     label: above
     settings:
@@ -485,7 +499,7 @@ content:
     third_party_settings: {  }
   field_admin_app_vic4:
     type: entity_reference_revisions_entity_view
-    weight: 109
+    weight: 110
     label: above
     settings:
       view_mode: default
@@ -494,7 +508,7 @@ content:
     region: content
   field_admin_app_vic5:
     type: entity_reference_revisions_entity_view
-    weight: 39
+    weight: 40
     region: content
     label: above
     settings:
@@ -503,7 +517,7 @@ content:
     third_party_settings: {  }
   field_admin_app_viie:
     type: entity_reference_revisions_entity_view
-    weight: 292
+    weight: 293
     label: above
     settings:
       view_mode: default
@@ -511,7 +525,7 @@ content:
     third_party_settings: {  }
     region: content
   field_agency:
-    weight: 4
+    weight: 5
     label: above
     settings:
       link: true
@@ -536,7 +550,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_date_prepared:
-    weight: 70
+    weight: 71
     label: above
     settings:
       format_type: medium
@@ -546,7 +560,7 @@ content:
     region: content
   field_fees_x:
     type: entity_reference_revisions_entity_view
-    weight: 288
+    weight: 289
     label: above
     settings:
       view_mode: default
@@ -554,7 +568,7 @@ content:
     third_party_settings: {  }
     region: content
   field_foia_annual_report_yr:
-    weight: 69
+    weight: 70
     label: above
     settings:
       thousand_separator: ''
@@ -564,7 +578,7 @@ content:
     region: content
   field_foia_pers_costs_ix:
     type: entity_reference_revisions_entity_view
-    weight: 289
+    weight: 290
     label: above
     settings:
       view_mode: default
@@ -573,23 +587,14 @@ content:
     region: content
   field_foia_requests_va:
     type: entity_reference_revisions_entity_view
-    weight: 40
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  field_foia_requests_vb1:
-    type: entity_reference_revisions_entity_view
     weight: 41
     region: content
     label: above
     settings:
-      view_mode: default
+      view_mode: node_to_docx
       link: ''
     third_party_settings: {  }
-  field_foia_requests_vb2:
+  field_foia_requests_vb1:
     type: entity_reference_revisions_entity_view
     weight: 42
     region: content
@@ -598,7 +603,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  field_foia_requests_vb3:
+  field_foia_requests_vb2:
     type: entity_reference_revisions_entity_view
     weight: 43
     region: content
@@ -607,9 +612,18 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+  field_foia_requests_vb3:
+    type: entity_reference_revisions_entity_view
+    weight: 44
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_foia_xiia:
     type: entity_reference_revisions_entity_view
-    weight: 285
+    weight: 286
     label: above
     settings:
       view_mode: default
@@ -618,7 +632,7 @@ content:
     region: content
   field_foia_xiib:
     type: entity_reference_revisions_entity_view
-    weight: 284
+    weight: 285
     label: above
     settings:
       view_mode: default
@@ -627,7 +641,7 @@ content:
     region: content
   field_foia_xiic:
     type: entity_reference_revisions_entity_view
-    weight: 283
+    weight: 284
     label: above
     settings:
       view_mode: default
@@ -636,7 +650,7 @@ content:
     region: content
   field_foia_xiid1:
     type: entity_reference_revisions_entity_view
-    weight: 282
+    weight: 283
     label: above
     settings:
       view_mode: default
@@ -645,7 +659,7 @@ content:
     region: content
   field_foia_xiid2:
     type: entity_reference_revisions_entity_view
-    weight: 280
+    weight: 281
     label: above
     settings:
       view_mode: default
@@ -654,7 +668,7 @@ content:
     region: content
   field_foia_xiie1:
     type: entity_reference_revisions_entity_view
-    weight: 281
+    weight: 282
     label: above
     settings:
       view_mode: default
@@ -663,7 +677,7 @@ content:
     region: content
   field_foia_xiie2:
     type: entity_reference_revisions_entity_view
-    weight: 299
+    weight: 300
     label: above
     settings:
       view_mode: default
@@ -672,210 +686,210 @@ content:
     region: content
   field_footnotes_iv:
     type: twitter_embed
-    weight: 45
+    weight: 46
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_ix:
     type: twitter_embed
-    weight: 44
+    weight: 45
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_va:
     type: twitter_embed
-    weight: 46
+    weight: 47
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vb1:
     type: twitter_embed
-    weight: 47
+    weight: 48
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vb2:
     type: twitter_embed
-    weight: 48
+    weight: 49
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vb3:
     type: twitter_embed
-    weight: 49
+    weight: 50
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_via:
     type: twitter_embed
-    weight: 50
+    weight: 51
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vib:
     type: twitter_embed
-    weight: 51
+    weight: 52
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vic1:
     type: twitter_embed
-    weight: 37
+    weight: 38
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vic2:
     type: twitter_embed
-    weight: 52
+    weight: 53
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vic3:
     type: twitter_embed
-    weight: 62
+    weight: 63
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vic4:
     type: twitter_embed
-    weight: 68
+    weight: 69
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_vic5:
     type: twitter_embed
-    weight: 66
+    weight: 67
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viia:
     type: twitter_embed
-    weight: 67
+    weight: 68
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viib:
     type: twitter_embed
-    weight: 65
+    weight: 66
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viic1:
     type: twitter_embed
-    weight: 63
+    weight: 64
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viic2:
     type: twitter_embed
-    weight: 64
+    weight: 65
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viic3:
     type: twitter_embed
-    weight: 60
+    weight: 61
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viid:
     type: twitter_embed
-    weight: 53
+    weight: 54
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viie:
     type: twitter_embed
-    weight: 61
+    weight: 62
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viiia:
     type: twitter_embed
-    weight: 59
+    weight: 60
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_viiib:
     type: twitter_embed
-    weight: 58
+    weight: 59
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_x:
     type: twitter_embed
-    weight: 57
+    weight: 58
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xia:
     type: twitter_embed
-    weight: 55
+    weight: 56
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xib:
     type: twitter_embed
-    weight: 54
+    weight: 55
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiia:
     type: twitter_embed
-    weight: 56
+    weight: 57
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiib:
     type: twitter_embed
-    weight: 35
+    weight: 36
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiic:
     type: twitter_embed
-    weight: 20
+    weight: 21
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiid1:
     type: twitter_embed
-    weight: 34
+    weight: 35
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiid2:
     type: twitter_embed
-    weight: 7
+    weight: 8
     region: content
     label: above
     settings: {  }
@@ -895,37 +909,6 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_overall_ix_eq_full_emp:
-    weight: 239
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_overall_ix_full_emp:
-    weight: 238
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_ix_lit_costs:
-    weight: 241
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_overall_ix_proc_costs:
     weight: 240
     label: above
     settings:
@@ -936,7 +919,16 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
-  field_overall_ix_total_costs:
+  field_overall_ix_full_emp:
+    weight: 239
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_ix_lit_costs:
     weight: 242
     label: above
     settings:
@@ -947,8 +939,30 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
-  field_overall_ix_total_staff:
+  field_overall_ix_proc_costs:
+    weight: 241
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_overall_ix_total_costs:
     weight: 243
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_overall_ix_total_staff:
+    weight: 244
     label: above
     settings:
       thousand_separator: ''
@@ -960,7 +974,7 @@ content:
     region: content
   field_overall_req_pend_end_yr:
     type: number_integer
-    weight: 8
+    weight: 9
     region: content
     label: above
     settings:
@@ -969,7 +983,7 @@ content:
     third_party_settings: {  }
   field_overall_req_pend_start_yr:
     type: number_integer
-    weight: 9
+    weight: 10
     region: content
     label: above
     settings:
@@ -978,7 +992,7 @@ content:
     third_party_settings: {  }
   field_overall_req_processed_yr:
     type: number_integer
-    weight: 10
+    weight: 11
     region: content
     label: above
     settings:
@@ -987,7 +1001,7 @@ content:
     third_party_settings: {  }
   field_overall_req_received_yr:
     type: number_integer
-    weight: 11
+    weight: 12
     region: content
     label: above
     settings:
@@ -996,7 +1010,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_dup_request:
     type: number_integer
-    weight: 12
+    weight: 13
     region: content
     label: above
     settings:
@@ -1005,7 +1019,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_fee_related_re:
     type: number_integer
-    weight: 13
+    weight: 14
     region: content
     label: above
     settings:
@@ -1014,7 +1028,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_full_denials_e:
     type: number_integer
-    weight: 14
+    weight: 15
     region: content
     label: above
     settings:
@@ -1023,7 +1037,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_full_grants:
     type: number_integer
-    weight: 15
+    weight: 16
     region: content
     label: above
     settings:
@@ -1032,7 +1046,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_imp_req_oth_re:
     type: number_integer
-    weight: 16
+    weight: 17
     region: content
     label: above
     settings:
@@ -1041,7 +1055,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_no_rec:
     type: number_integer
-    weight: 17
+    weight: 18
     region: content
     label: above
     settings:
@@ -1050,7 +1064,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_not_agency_rec:
     type: number_integer
-    weight: 18
+    weight: 19
     region: content
     label: above
     settings:
@@ -1059,7 +1073,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_oth:
     type: number_integer
-    weight: 6
+    weight: 7
     region: content
     label: above
     settings:
@@ -1068,7 +1082,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_part_grants_de:
     type: number_integer
-    weight: 19
+    weight: 20
     region: content
     label: above
     settings:
@@ -1077,7 +1091,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_rec_not_desc:
     type: number_integer
-    weight: 29
+    weight: 30
     region: content
     label: above
     settings:
@@ -1086,7 +1100,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_rec_ref_to_an_:
     type: number_integer
-    weight: 33
+    weight: 34
     region: content
     label: above
     settings:
@@ -1095,7 +1109,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_req_withdrawn:
     type: number_integer
-    weight: 32
+    weight: 33
     region: content
     label: above
     settings:
@@ -1104,7 +1118,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_total:
     type: number_integer
-    weight: 31
+    weight: 32
     region: content
     label: above
     settings:
@@ -1113,7 +1127,7 @@ content:
     third_party_settings: {  }
   field_overall_vb2_total:
     type: number_integer
-    weight: 30
+    weight: 31
     region: content
     label: above
     settings:
@@ -1122,7 +1136,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_1:
     type: number_integer
-    weight: 21
+    weight: 22
     region: content
     label: above
     settings:
@@ -1131,7 +1145,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_2:
     type: number_integer
-    weight: 22
+    weight: 23
     region: content
     label: above
     settings:
@@ -1140,7 +1154,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_3:
     type: number_integer
-    weight: 23
+    weight: 24
     region: content
     label: above
     settings:
@@ -1149,7 +1163,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_4:
     type: number_integer
-    weight: 24
+    weight: 25
     region: content
     label: above
     settings:
@@ -1158,7 +1172,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_5:
     type: number_integer
-    weight: 25
+    weight: 26
     region: content
     label: above
     settings:
@@ -1167,7 +1181,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_6:
     type: number_integer
-    weight: 26
+    weight: 27
     region: content
     label: above
     settings:
@@ -1230,7 +1244,7 @@ content:
     region: content
   field_overall_vb3_ex_8:
     type: number_integer
-    weight: 27
+    weight: 28
     region: content
     label: above
     settings:
@@ -1239,7 +1253,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_9:
     type: number_integer
-    weight: 28
+    weight: 29
     region: content
     label: above
     settings:
@@ -1247,7 +1261,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
   field_overall_via_app_pend_endyr:
-    weight: 75
+    weight: 76
     label: above
     settings:
       thousand_separator: ''
@@ -1256,7 +1270,7 @@ content:
     type: number_integer
     region: content
   field_overall_via_app_pend_start:
-    weight: 71
+    weight: 72
     label: above
     settings:
       thousand_separator: ''
@@ -1265,7 +1279,7 @@ content:
     type: number_integer
     region: content
   field_overall_via_app_proc_yr:
-    weight: 74
+    weight: 75
     label: above
     settings:
       thousand_separator: ''
@@ -1274,7 +1288,7 @@ content:
     type: number_integer
     region: content
   field_overall_via_app_recd_yr:
-    weight: 73
+    weight: 74
     label: above
     settings:
       thousand_separator: ''
@@ -1283,33 +1297,6 @@ content:
     type: number_integer
     region: content
   field_overall_vib_affirm_on_app:
-    weight: 77
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vib_closed_oth_app:
-    weight: 80
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vib_comp_on_app:
-    weight: 79
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vib_part_on_app:
     weight: 78
     label: above
     settings:
@@ -1318,7 +1305,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vib_total:
+  field_overall_vib_closed_oth_app:
     weight: 81
     label: above
     settings:
@@ -1327,7 +1314,25 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_1:
+  field_overall_vib_comp_on_app:
+    weight: 80
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vib_part_on_app:
+    weight: 79
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vib_total:
     weight: 82
     label: above
     settings:
@@ -1336,7 +1341,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_2:
+  field_overall_vic1_ex_1:
     weight: 83
     label: above
     settings:
@@ -1345,7 +1350,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_3:
+  field_overall_vic1_ex_2:
     weight: 84
     label: above
     settings:
@@ -1354,7 +1359,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_4:
+  field_overall_vic1_ex_3:
     weight: 85
     label: above
     settings:
@@ -1363,7 +1368,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_5:
+  field_overall_vic1_ex_4:
     weight: 86
     label: above
     settings:
@@ -1372,7 +1377,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_6:
+  field_overall_vic1_ex_5:
     weight: 87
     label: above
     settings:
@@ -1381,7 +1386,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_a:
+  field_overall_vic1_ex_6:
     weight: 88
     label: above
     settings:
@@ -1390,7 +1395,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_b:
+  field_overall_vic1_ex_7_a:
     weight: 89
     label: above
     settings:
@@ -1399,7 +1404,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_c:
+  field_overall_vic1_ex_7_b:
     weight: 90
     label: above
     settings:
@@ -1408,7 +1413,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_d:
+  field_overall_vic1_ex_7_c:
     weight: 91
     label: above
     settings:
@@ -1417,7 +1422,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_e:
+  field_overall_vic1_ex_7_d:
     weight: 92
     label: above
     settings:
@@ -1426,7 +1431,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_7_f:
+  field_overall_vic1_ex_7_e:
     weight: 93
     label: above
     settings:
@@ -1435,7 +1440,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_8:
+  field_overall_vic1_ex_7_f:
     weight: 94
     label: above
     settings:
@@ -1444,7 +1449,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic1_ex_9:
+  field_overall_vic1_ex_8:
     weight: 95
     label: above
     settings:
@@ -1453,43 +1458,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic2_app_denial_ex:
-    weight: 105
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_dup_req:
-    weight: 103
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_fee_rel_reas:
-    weight: 99
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_imp_req_oth:
-    weight: 101
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_no_rec:
+  field_overall_vic1_ex_9:
     weight: 96
     label: above
     settings:
@@ -1498,16 +1467,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic2_not_agency_re:
-    weight: 102
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_oth:
+  field_overall_vic2_app_denial_ex:
     weight: 106
     label: above
     settings:
@@ -1516,25 +1476,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic2_rec_not_desc:
-    weight: 100
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_rec_refer_ini:
-    weight: 97
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_vic2_req_in_lit:
+  field_overall_vic2_dup_req:
     weight: 104
     label: above
     settings:
@@ -1543,8 +1485,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic2_req_withdrawn:
-    weight: 98
+  field_overall_vic2_fee_rel_reas:
+    weight: 100
     label: above
     settings:
       thousand_separator: ''
@@ -1552,7 +1494,34 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic3_num_relied_up:
+  field_overall_vic2_imp_req_oth:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_no_rec:
+    weight: 97
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_not_agency_re:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_oth:
     weight: 107
     label: above
     settings:
@@ -1561,7 +1530,43 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_vic3_total:
+  field_overall_vic2_rec_not_desc:
+    weight: 101
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_rec_refer_ini:
+    weight: 98
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_req_in_lit:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic2_req_withdrawn:
+    weight: 99
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_vic3_num_relied_up:
     weight: 108
     label: above
     settings:
@@ -1570,29 +1575,16 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_overall_vic3_total:
+    weight: 109
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_overall_vic4_avg_num_days:
-    weight: 111
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_overall_vic4_high_num_days:
-    weight: 113
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_overall_vic4_low_num_days:
     weight: 112
     label: above
     settings:
@@ -1603,8 +1595,30 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
+  field_overall_vic4_high_num_days:
+    weight: 114
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_overall_vic4_low_num_days:
+    weight: 113
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
   field_overall_vic4_med_num_days:
-    weight: 110
+    weight: 111
     label: above
     settings:
       thousand_separator: ''
@@ -1615,323 +1629,314 @@ content:
     type: number_decimal
     region: content
   field_overall_vic5_date_1:
-    weight: 132
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_10:
-    weight: 122
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_2:
-    weight: 114
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_3:
-    weight: 115
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_4:
-    weight: 116
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_5:
-    weight: 117
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_6:
-    weight: 118
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_7:
-    weight: 119
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_8:
-    weight: 120
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_date_9:
-    weight: 121
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_num_day_1:
     weight: 133
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_10:
-    weight: 131
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_vic5_num_day_2:
+  field_overall_vic5_date_10:
     weight: 123
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_3:
-    weight: 124
+  field_overall_vic5_date_2:
+    weight: 115
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_4:
-    weight: 125
+  field_overall_vic5_date_3:
+    weight: 116
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_5:
-    weight: 126
+  field_overall_vic5_date_4:
+    weight: 117
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_6:
-    weight: 127
+  field_overall_vic5_date_5:
+    weight: 118
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_7:
-    weight: 128
+  field_overall_vic5_date_6:
+    weight: 119
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_8:
-    weight: 129
+  field_overall_vic5_date_7:
+    weight: 120
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_vic5_num_day_9:
-    weight: 130
+  field_overall_vic5_date_8:
+    weight: 121
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viia_comp_avg:
-    weight: 139
+  field_overall_vic5_date_9:
+    weight: 122
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viia_comp_high:
-    weight: 141
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_comp_low:
-    weight: 140
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_comp_med:
-    weight: 138
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_exp_avg:
-    weight: 143
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_exp_high:
-    weight: 145
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_exp_low:
-    weight: 144
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_exp_med:
-    weight: 142
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_sim_avg:
-    weight: 135
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_sim_high:
-    weight: 137
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_sim_low:
-    weight: 136
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viia_sim_med:
+  field_overall_vic5_num_day_1:
     weight: 134
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_comp_avg:
-    weight: 151
+  field_overall_vic5_num_day_10:
+    weight: 132
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_comp_high:
-    weight: 153
+  field_overall_vic5_num_day_2:
+    weight: 124
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_comp_low:
-    weight: 152
+  field_overall_vic5_num_day_3:
+    weight: 125
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_comp_med:
-    weight: 150
+  field_overall_vic5_num_day_4:
+    weight: 126
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_exp_avg:
-    weight: 155
+  field_overall_vic5_num_day_5:
+    weight: 127
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_exp_high:
-    weight: 157
+  field_overall_vic5_num_day_6:
+    weight: 128
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_exp_low:
-    weight: 156
+  field_overall_vic5_num_day_7:
+    weight: 129
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_exp_med:
-    weight: 154
+  field_overall_vic5_num_day_8:
+    weight: 130
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_sim_avg:
-    weight: 147
+  field_overall_vic5_num_day_9:
+    weight: 131
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_sim_high:
-    weight: 149
+  field_overall_viia_comp_avg:
+    weight: 140
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_sim_low:
-    weight: 148
+  field_overall_viia_comp_high:
+    weight: 142
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viib_sim_med:
+  field_overall_viia_comp_low:
+    weight: 141
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_comp_med:
+    weight: 139
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_exp_avg:
+    weight: 144
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_exp_high:
     weight: 146
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viic1_101_120_days:
-    weight: 163
+  field_overall_viia_exp_low:
+    weight: 145
     label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    settings: {  }
     third_party_settings: {  }
-    type: number_integer
+    type: twitter_embed
     region: content
-  field_overall_viic1_121_140_days:
+  field_overall_viia_exp_med:
+    weight: 143
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_sim_avg:
+    weight: 136
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_sim_high:
+    weight: 138
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_sim_low:
+    weight: 137
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viia_sim_med:
+    weight: 135
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_comp_avg:
+    weight: 152
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_comp_high:
+    weight: 154
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_comp_low:
+    weight: 153
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_comp_med:
+    weight: 151
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_exp_avg:
+    weight: 156
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_exp_high:
+    weight: 158
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_exp_low:
+    weight: 157
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_exp_med:
+    weight: 155
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_sim_avg:
+    weight: 148
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_sim_high:
+    weight: 150
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_sim_low:
+    weight: 149
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viib_sim_med:
+    weight: 147
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viic1_101_120_days:
     weight: 164
     label: above
     settings:
@@ -1940,7 +1945,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_141_160_days:
+  field_overall_viic1_121_140_days:
     weight: 165
     label: above
     settings:
@@ -1949,7 +1954,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_161_180_days:
+  field_overall_viic1_141_160_days:
     weight: 166
     label: above
     settings:
@@ -1958,7 +1963,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_181_200_days:
+  field_overall_viic1_161_180_days:
     weight: 167
     label: above
     settings:
@@ -1967,16 +1972,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_1_20_days:
-    weight: 158
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic1_201_300_days:
+  field_overall_viic1_181_200_days:
     weight: 168
     label: above
     settings:
@@ -1985,7 +1981,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_21_40_days:
+  field_overall_viic1_1_20_days:
     weight: 159
     label: above
     settings:
@@ -1994,7 +1990,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_301_400_days:
+  field_overall_viic1_201_300_days:
     weight: 169
     label: above
     settings:
@@ -2003,16 +1999,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_400_up_days:
-    weight: 170
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic1_41_60_days:
+  field_overall_viic1_21_40_days:
     weight: 160
     label: above
     settings:
@@ -2021,8 +2008,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_61_80_days:
-    weight: 161
+  field_overall_viic1_301_400_days:
+    weight: 170
     label: above
     settings:
       thousand_separator: ''
@@ -2030,16 +2017,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic1_81_100_days:
-    weight: 162
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic1_total:
+  field_overall_viic1_400_up_days:
     weight: 171
     label: above
     settings:
@@ -2048,8 +2026,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_101_120_days:
-    weight: 177
+  field_overall_viic1_41_60_days:
+    weight: 161
     label: above
     settings:
       thousand_separator: ''
@@ -2057,8 +2035,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_121_140_days:
-    weight: 178
+  field_overall_viic1_61_80_days:
+    weight: 162
     label: above
     settings:
       thousand_separator: ''
@@ -2066,8 +2044,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_141_160_days:
-    weight: 179
+  field_overall_viic1_81_100_days:
+    weight: 163
     label: above
     settings:
       thousand_separator: ''
@@ -2075,25 +2053,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_161_180_days:
-    weight: 180
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic2_181_200_days:
-    weight: 181
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic2_1_20_days:
+  field_overall_viic1_total:
     weight: 172
     label: above
     settings:
@@ -2102,7 +2062,43 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_201_300_days:
+  field_overall_viic2_101_120_days:
+    weight: 178
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic2_121_140_days:
+    weight: 179
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic2_141_160_days:
+    weight: 180
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic2_161_180_days:
+    weight: 181
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic2_181_200_days:
     weight: 182
     label: above
     settings:
@@ -2111,7 +2107,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_21_40_days:
+  field_overall_viic2_1_20_days:
     weight: 173
     label: above
     settings:
@@ -2120,7 +2116,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_301_400_days:
+  field_overall_viic2_201_300_days:
     weight: 183
     label: above
     settings:
@@ -2129,16 +2125,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_400_up_days:
-    weight: 184
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic2_41_60_days:
+  field_overall_viic2_21_40_days:
     weight: 174
     label: above
     settings:
@@ -2147,8 +2134,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_61_80_days:
-    weight: 175
+  field_overall_viic2_301_400_days:
+    weight: 184
     label: above
     settings:
       thousand_separator: ''
@@ -2156,16 +2143,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic2_81_100_days:
-    weight: 176
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic2_total:
+  field_overall_viic2_400_up_days:
     weight: 185
     label: above
     settings:
@@ -2174,8 +2152,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_101_120_days:
-    weight: 191
+  field_overall_viic2_41_60_days:
+    weight: 175
     label: above
     settings:
       thousand_separator: ''
@@ -2183,8 +2161,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_121_140_days:
-    weight: 192
+  field_overall_viic2_61_80_days:
+    weight: 176
     label: above
     settings:
       thousand_separator: ''
@@ -2192,8 +2170,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_141_160_days:
-    weight: 193
+  field_overall_viic2_81_100_days:
+    weight: 177
     label: above
     settings:
       thousand_separator: ''
@@ -2201,25 +2179,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_161_180_days:
-    weight: 194
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic3_181_200_days:
-    weight: 195
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic3_1_20_days:
+  field_overall_viic2_total:
     weight: 186
     label: above
     settings:
@@ -2228,7 +2188,43 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_201_300_days:
+  field_overall_viic3_101_120_days:
+    weight: 192
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_121_140_days:
+    weight: 193
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_141_160_days:
+    weight: 194
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_161_180_days:
+    weight: 195
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_181_200_days:
     weight: 196
     label: above
     settings:
@@ -2237,7 +2233,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_21_40_days:
+  field_overall_viic3_1_20_days:
     weight: 187
     label: above
     settings:
@@ -2246,7 +2242,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_301_400_days:
+  field_overall_viic3_201_300_days:
     weight: 197
     label: above
     settings:
@@ -2255,16 +2251,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_400_up_days:
-    weight: 198
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic3_41_60_days:
+  field_overall_viic3_21_40_days:
     weight: 188
     label: above
     settings:
@@ -2273,8 +2260,8 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_61_80_days:
-    weight: 189
+  field_overall_viic3_301_400_days:
+    weight: 198
     label: above
     settings:
       thousand_separator: ''
@@ -2282,16 +2269,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_viic3_81_100_days:
-    weight: 190
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_viic3_total:
+  field_overall_viic3_400_up_days:
     weight: 199
     label: above
     settings:
@@ -2300,225 +2278,261 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_overall_viic3_41_60_days:
+    weight: 189
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_61_80_days:
+    weight: 190
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_81_100_days:
+    weight: 191
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_viic3_total:
+    weight: 200
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_overall_viid_comp_avg:
-    weight: 205
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viid_comp_med:
-    weight: 203
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viid_comp_pend:
-    weight: 204
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viid_exp_avg:
-    weight: 208
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viid_exp_med:
-    weight: 207
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viid_exp_pend:
     weight: 206
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viid_sim_avg:
-    weight: 202
+  field_overall_viid_comp_med:
+    weight: 204
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viid_sim_med:
-    weight: 201
+  field_overall_viid_comp_pend:
+    weight: 205
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viid_sim_pend:
-    weight: 200
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viie_date_1:
-    weight: 227
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viie_date_10:
+  field_overall_viid_exp_avg:
     weight: 209
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_2:
-    weight: 225
+  field_overall_viid_exp_med:
+    weight: 208
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_3:
-    weight: 223
+  field_overall_viid_exp_pend:
+    weight: 207
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_4:
-    weight: 221
+  field_overall_viid_sim_avg:
+    weight: 203
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_5:
-    weight: 219
+  field_overall_viid_sim_med:
+    weight: 202
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_6:
-    weight: 217
+  field_overall_viid_sim_pend:
+    weight: 201
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_date_7:
-    weight: 215
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viie_date_8:
-    weight: 213
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viie_date_9:
-    weight: 211
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_viie_num_days_1:
+  field_overall_viie_date_1:
     weight: 228
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_10:
+  field_overall_viie_date_10:
     weight: 210
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_2:
+  field_overall_viie_date_2:
     weight: 226
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_3:
+  field_overall_viie_date_3:
     weight: 224
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_4:
+  field_overall_viie_date_4:
     weight: 222
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_5:
+  field_overall_viie_date_5:
     weight: 220
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_6:
+  field_overall_viie_date_6:
     weight: 218
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_7:
+  field_overall_viie_date_7:
     weight: 216
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_8:
+  field_overall_viie_date_8:
     weight: 214
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_viie_num_days_9:
+  field_overall_viie_date_9:
     weight: 212
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
+  field_overall_viie_num_days_1:
+    weight: 229
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_10:
+    weight: 211
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_2:
+    weight: 227
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_3:
+    weight: 225
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_4:
+    weight: 223
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_5:
+    weight: 221
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_6:
+    weight: 219
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_7:
+    weight: 217
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_8:
+    weight: 215
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_viie_num_days_9:
+    weight: 213
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
   field_overall_viiia_avg_days_jud:
-    weight: 232
+    weight: 233
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
   field_overall_viiia_med_days_jud:
-    weight: 231
+    weight: 232
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
   field_overall_viiia_num_denied:
-    weight: 230
+    weight: 231
     label: above
     settings:
       thousand_separator: ''
@@ -2527,7 +2541,7 @@ content:
     type: number_integer
     region: content
   field_overall_viiia_num_grant:
-    weight: 229
+    weight: 230
     label: above
     settings:
       thousand_separator: ''
@@ -2536,28 +2550,28 @@ content:
     type: number_integer
     region: content
   field_overall_viiia_num_jud_w10:
-    weight: 233
+    weight: 234
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
   field_overall_viiib_avg_days_jud:
-    weight: 237
+    weight: 238
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
   field_overall_viiib_med_days_jud:
-    weight: 236
+    weight: 237
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
   field_overall_viiib_num_denied:
-    weight: 235
+    weight: 236
     label: above
     settings:
       thousand_separator: ''
@@ -2566,7 +2580,7 @@ content:
     type: number_integer
     region: content
   field_overall_viiib_num_grant:
-    weight: 234
+    weight: 235
     label: above
     settings:
       thousand_separator: ''
@@ -2575,7 +2589,7 @@ content:
     type: number_integer
     region: content
   field_overall_x_perc_costs:
-    weight: 245
+    weight: 246
     label: above
     settings:
       thousand_separator: ''
@@ -2586,7 +2600,7 @@ content:
     type: number_decimal
     region: content
   field_overall_x_total_fees:
-    weight: 244
+    weight: 245
     label: above
     settings:
       thousand_separator: ''
@@ -2597,15 +2611,6 @@ content:
     type: number_decimal
     region: content
   field_overall_xia_sub_used:
-    weight: 246
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_xib_rec_post_foia:
     weight: 247
     label: above
     settings:
@@ -2614,8 +2619,17 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_xib_rec_post_prog:
+  field_overall_xib_rec_post_foia:
     weight: 248
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_overall_xib_rec_post_prog:
+    weight: 249
     label: above
     settings:
       thousand_separator: ''
@@ -2631,33 +2645,6 @@ content:
     type: twitter_embed
     region: content
   field_overall_xiia_back_req_end_:
-    weight: 249
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_xiib_con_during_yr:
-    weight: 251
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_xiib_pend_end_yr:
-    weight: 253
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_overall_xiib_pend_start_yr:
     weight: 250
     label: above
     settings:
@@ -2666,7 +2653,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_xiib_proc_start_yr:
+  field_overall_xiib_con_during_yr:
     weight: 252
     label: above
     settings:
@@ -2675,148 +2662,175 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_overall_xiic_date_1:
-    weight: 272
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_10:
+  field_overall_xiib_pend_end_yr:
     weight: 254
     label: above
-    settings: {  }
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: twitter_embed
+    type: number_integer
     region: content
-  field_overall_xiic_date_2:
-    weight: 270
+  field_overall_xiib_pend_start_yr:
+    weight: 251
     label: above
-    settings: {  }
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: twitter_embed
+    type: number_integer
     region: content
-  field_overall_xiic_date_3:
-    weight: 268
+  field_overall_xiib_proc_start_yr:
+    weight: 253
     label: above
-    settings: {  }
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: twitter_embed
+    type: number_integer
     region: content
-  field_overall_xiic_date_4:
-    weight: 266
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_5:
-    weight: 264
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_6:
-    weight: 262
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_7:
-    weight: 260
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_8:
-    weight: 258
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_date_9:
-    weight: 256
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: twitter_embed
-    region: content
-  field_overall_xiic_num_days_1:
+  field_overall_xiic_date_1:
     weight: 273
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_10:
+  field_overall_xiic_date_10:
     weight: 255
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_2:
+  field_overall_xiic_date_2:
     weight: 271
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_3:
+  field_overall_xiic_date_3:
     weight: 269
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_4:
+  field_overall_xiic_date_4:
     weight: 267
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_5:
+  field_overall_xiic_date_5:
     weight: 265
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_6:
+  field_overall_xiic_date_6:
     weight: 263
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_7:
+  field_overall_xiic_date_7:
     weight: 261
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_8:
+  field_overall_xiic_date_8:
     weight: 259
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
-  field_overall_xiic_num_days_9:
+  field_overall_xiic_date_9:
     weight: 257
     label: above
     settings: {  }
     third_party_settings: {  }
     type: twitter_embed
     region: content
+  field_overall_xiic_num_days_1:
+    weight: 274
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_10:
+    weight: 256
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_2:
+    weight: 272
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_3:
+    weight: 270
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_4:
+    weight: 268
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_5:
+    weight: 266
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_6:
+    weight: 264
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_7:
+    weight: 262
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_8:
+    weight: 260
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
+  field_overall_xiic_num_days_9:
+    weight: 258
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: twitter_embed
+    region: content
   field_overall_xiid1_proc_cur_yr:
-    weight: 276
+    weight: 277
     label: above
     settings:
       thousand_separator: ''
@@ -2834,7 +2848,7 @@ content:
     type: number_integer
     region: content
   field_overall_xiid1_received_cur:
-    weight: 275
+    weight: 276
     label: above
     settings:
       thousand_separator: ''
@@ -2843,7 +2857,7 @@ content:
     type: number_integer
     region: content
   field_overall_xiid1_received_las:
-    weight: 274
+    weight: 275
     label: above
     settings:
       thousand_separator: ''
@@ -2852,7 +2866,7 @@ content:
     type: number_integer
     region: content
   field_overall_xiid2_back_cur_yr:
-    weight: 278
+    weight: 279
     label: above
     settings:
       thousand_separator: ''
@@ -2861,7 +2875,7 @@ content:
     type: number_integer
     region: content
   field_overall_xiid2_back_prev_yr:
-    weight: 277
+    weight: 278
     label: above
     settings:
       thousand_separator: ''
@@ -2879,7 +2893,7 @@ content:
     type: number_integer
     region: content
   field_overall_xiie1_proc_last_yr:
-    weight: 279
+    weight: 280
     label: above
     settings:
       thousand_separator: ''
@@ -2925,7 +2939,7 @@ content:
     region: content
   field_pending_requests_vii_d_:
     type: entity_reference_revisions_entity_view
-    weight: 293
+    weight: 294
     label: above
     settings:
       view_mode: default
@@ -2934,7 +2948,7 @@ content:
     region: content
   field_proc_req_viia:
     type: entity_reference_revisions_entity_view
-    weight: 298
+    weight: 299
     label: above
     settings:
       view_mode: default
@@ -2943,7 +2957,7 @@ content:
     region: content
   field_proc_req_viib:
     type: entity_reference_revisions_entity_view
-    weight: 297
+    weight: 298
     label: above
     settings:
       view_mode: default
@@ -2952,7 +2966,7 @@ content:
     region: content
   field_proc_req_viic1:
     type: entity_reference_revisions_entity_view
-    weight: 296
+    weight: 297
     label: above
     settings:
       view_mode: default
@@ -2961,7 +2975,7 @@ content:
     region: content
   field_proc_req_viic2:
     type: entity_reference_revisions_entity_view
-    weight: 295
+    weight: 296
     label: above
     settings:
       view_mode: default
@@ -2970,7 +2984,7 @@ content:
     region: content
   field_proc_req_viic3:
     type: entity_reference_revisions_entity_view
-    weight: 294
+    weight: 295
     label: above
     settings:
       view_mode: default
@@ -2979,7 +2993,7 @@ content:
     region: content
   field_req_viiia:
     type: entity_reference_revisions_entity_view
-    weight: 291
+    weight: 292
     label: above
     settings:
       view_mode: default
@@ -2988,7 +3002,7 @@ content:
     region: content
   field_req_viiib:
     type: entity_reference_revisions_entity_view
-    weight: 290
+    weight: 291
     label: above
     settings:
       view_mode: default
@@ -3006,7 +3020,7 @@ content:
     region: content
   field_sub_xia:
     type: entity_reference_revisions_entity_view
-    weight: 287
+    weight: 288
     label: above
     settings:
       view_mode: default
@@ -3015,7 +3029,7 @@ content:
     region: content
   field_sub_xib:
     type: entity_reference_revisions_entity_view
-    weight: 286
+    weight: 287
     label: above
     settings:
       view_mode: default
@@ -3023,7 +3037,7 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
