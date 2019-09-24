@@ -1,0 +1,14 @@
+uuid: f8c75315-327e-4c0a-a573-59cacb2a2522
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: 'Used when displaying an Agency Component in the Statute table'
+id: node.node_to_docx_agency_component_statute
+label: 'Node to Docx Agency Component Statute'
+targetEntityType: node
+cache: true

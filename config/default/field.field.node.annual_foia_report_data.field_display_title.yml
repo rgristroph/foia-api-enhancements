@@ -1,0 +1,19 @@
+uuid: c3ecf466-d315-4f1d-ae9d-049b656852a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.annual_foia_report_data
+id: node.annual_foia_report_data.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: annual_foia_report_data
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

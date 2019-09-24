@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "423da4096b6f4fd25defd20499c61cf3",
+    "content-hash": "586813ffd56e7e4347ef93db15d498b6",
     "packages": [
         {
             "name": "acquia/blt",
@@ -9778,6 +9778,53 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "https://git.drupalcode.org/project/tablefield"
+            }
+        },
+        {
+            "name": "drupal/title_field_for_manage_display",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/title_field_for_manage_display.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/title_field_for_manage_display-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "60a9489c4d76e313a3f8e8802f7c3b9301c2d282"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1556204881",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ccx105",
+                    "homepage": "https://www.drupal.org/user/3157639"
+                }
+            ],
+            "description": "Creates a title text field with title formatter for manage display.",
+            "homepage": "https://www.drupal.org/project/title_field_for_manage_display",
+            "support": {
+                "source": "https://git.drupalcode.org/project/title_field_for_manage_display"
             }
         },
         {

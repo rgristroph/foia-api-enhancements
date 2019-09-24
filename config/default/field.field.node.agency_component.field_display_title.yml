@@ -1,0 +1,19 @@
+uuid: 7db22665-b136-47a9-85af-e6ca045e66c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.agency_component
+id: node.agency_component.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: agency_component
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

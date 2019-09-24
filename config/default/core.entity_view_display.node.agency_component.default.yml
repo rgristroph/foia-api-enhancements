@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.agency_component.field_complex_highest_days
     - field.field.node.agency_component.field_complex_lowest_days
     - field.field.node.agency_component.field_complex_median_days
+    - field.field.node.agency_component.field_display_title
     - field.field.node.agency_component.field_email
     - field.field.node.agency_component.field_expedited_average_days
     - field.field.node.agency_component.field_expedited_highest_days
@@ -48,6 +49,7 @@ dependencies:
     - panelizer
     - telephone
     - text
+    - title_field_for_manage_display
     - user
     - webform
 third_party_settings:
@@ -124,6 +126,16 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_display_title:
+    type: title_value_field_formatter
+    weight: 0
+    region: content
+    label: above
+    settings:
+      tag: h2
+      linked: '1'
+      classes: ''
+    third_party_settings: {  }
   field_email:
     weight: 6
     label: above
@@ -255,6 +267,8 @@ content:
     label: above
     settings:
       label: '[webform:title]'
+      dialog: ''
+      attributes: {  }
     third_party_settings: {  }
     type: webform_entity_reference_link
     region: content

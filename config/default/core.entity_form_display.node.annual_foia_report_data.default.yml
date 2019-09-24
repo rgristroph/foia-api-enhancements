@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.annual_foia_report_data.field_agency_abbr
     - field.field.node.annual_foia_report_data.field_agency_components
     - field.field.node.annual_foia_report_data.field_date_prepared
+    - field.field.node.annual_foia_report_data.field_display_title
     - field.field.node.annual_foia_report_data.field_fees_x
     - field.field.node.annual_foia_report_data.field_foia_annual_report_yr
     - field.field.node.annual_foia_report_data.field_foia_pers_costs_ix
@@ -133,6 +134,7 @@ dependencies:
     - field.field.node.annual_foia_report_data.field_overall_vic2_rec_refer_ini
     - field.field.node.annual_foia_report_data.field_overall_vic2_req_in_lit
     - field.field.node.annual_foia_report_data.field_overall_vic2_req_withdrawn
+    - field.field.node.annual_foia_report_data.field_overall_vic3_num_relied_up
     - field.field.node.annual_foia_report_data.field_overall_vic3_total
     - field.field.node.annual_foia_report_data.field_overall_vic4_avg_num_days
     - field.field.node.annual_foia_report_data.field_overall_vic4_high_num_days
@@ -317,6 +319,7 @@ dependencies:
     - field.field.node.annual_foia_report_data.field_statute_iv
     - field.field.node.annual_foia_report_data.field_sub_xia
     - field.field.node.annual_foia_report_data.field_sub_xib
+    - field.field.node.annual_foia_report_data.panelizer
     - node.type.annual_foia_report_data
     - workflows.workflow.annual_report_workflow
   module:
@@ -4372,7 +4375,10 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_display_title: true
+  field_overall_vic3_num_relied_up: true
   field_report_files: true
+  panelizer: true
   path: true
   promote: true
   status: true

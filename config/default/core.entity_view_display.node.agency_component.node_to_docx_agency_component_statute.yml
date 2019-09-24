@@ -1,9 +1,9 @@
-uuid: 6da22104-1497-4884-a81b-17a5ce56f17a
+uuid: 4204282e-8f88-4f9d-90ea-3fbcf2c16bd0
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.node_to_docx
+    - core.entity_view_mode.node.node_to_docx_agency_component_statute
     - field.field.node.agency_component.body
     - field.field.node.agency_component.field_agency
     - field.field.node.agency_component.field_agency_comp_abbreviation
@@ -55,27 +55,19 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: node.agency_component.node_to_docx
+id: node.agency_component.node_to_docx_agency_component_statute
 targetEntityType: node
 bundle: agency_component
-mode: node_to_docx
+mode: node_to_docx_agency_component_statute
 content:
   field_agency_comp_abbreviation:
     weight: 0
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_display_title:
-    type: string
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   body: true
   field_agency: true
@@ -84,6 +76,7 @@ hidden:
   field_complex_highest_days: true
   field_complex_lowest_days: true
   field_complex_median_days: true
+  field_display_title: true
   field_email: true
   field_expedited_average_days: true
   field_expedited_highest_days: true

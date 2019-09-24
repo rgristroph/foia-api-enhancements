@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.agency_component.field_complex_highest_days
     - field.field.node.agency_component.field_complex_lowest_days
     - field.field.node.agency_component.field_complex_median_days
+    - field.field.node.agency_component.field_display_title
     - field.field.node.agency_component.field_email
     - field.field.node.agency_component.field_expedited_average_days
     - field.field.node.agency_component.field_expedited_highest_days
@@ -545,4 +546,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_display_title: true

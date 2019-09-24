@@ -99,6 +99,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  reference_table_formatter: 0
   rest: 0
   restui: 0
   roleassign: 0
@@ -121,6 +122,7 @@ module:
   taxonomy: 0
   telephone: 0
   text: 0
+  title_field_for_manage_display: 0
   token: 0
   toolbar: 0
   typed_data: 0

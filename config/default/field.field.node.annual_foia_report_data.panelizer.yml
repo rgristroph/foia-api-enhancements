@@ -1,0 +1,21 @@
+uuid: b906d8c9-ab56-4ce3-94f5-d25e6fcf25ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.annual_foia_report_data
+  module:
+    - panelizer
+id: node.annual_foia_report_data.panelizer
+field_name: panelizer
+entity_type: node
+bundle: annual_foia_report_data
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

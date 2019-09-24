@@ -13,7 +13,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - layout_builder
-    - text
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -25,20 +24,19 @@ mode: node_to_docx
 content:
   field_agency_component_inf:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 3
     label: above
     settings:
-      view_mode: default
+      view_mode: node_to_docx
       link: ''
     third_party_settings: {  }
     region: content
   field_case_citation:
     weight: 2
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: basic_string
     region: content
   field_statute:
     weight: 0
@@ -49,7 +47,7 @@ content:
     type: string
     region: content
   field_total_num_relied_by_agency:
-    weight: 8
+    weight: 4
     label: above
     settings:
       thousand_separator: ''
@@ -62,7 +60,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: basic_string
     region: content
 hidden:
   search_api_excerpt: true

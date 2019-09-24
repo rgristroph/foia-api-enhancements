@@ -1,0 +1,19 @@
+uuid: 0220d008-7730-41e9-bbbc-12658a4e080f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.landing_page
+id: node.landing_page.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: landing_page
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

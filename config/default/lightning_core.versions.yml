@@ -123,6 +123,7 @@ tablefield_required: 2.0.0-alpha3
 taxonomy: 8.4.5
 telephone: 8.4.5
 text: 8.4.5
+title_field_for_manage_display: 1.9.0
 token: 1.1.0
 toolbar: 8.4.5
 typed_data: 1.0.0-alpha1

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_display_title
     - field.field.node.page.field_meta_tags
     - field.field.node.page.panelizer
     - node.type.page
@@ -41,5 +42,6 @@ content:
     weight: -20
     region: content
 hidden:
+  field_display_title: true
   panelizer: true
   search_api_excerpt: true
