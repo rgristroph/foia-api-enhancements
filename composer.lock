@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e67048a3b08c5b7384d9b971973c459",
+    "content-hash": "423da4096b6f4fd25defd20499c61cf3",
     "packages": [
         {
             "name": "acquia/blt",
@@ -4273,6 +4273,7 @@
                 "patches_applied": {
                     "Account for null triggering element when validating managed file elements": "https://www.drupal.org/files/issues/validating_managed-2910320-2.patch",
                     "JSONAPI fix for missing entities": "https://www.drupal.org/files/issues/2019-06-21/drupal--jsonapi--3063326--public-name-for-relatable-fields.patch",
+                    "FOIA-96: Style read-only inputs as disabled": "./patches/FOIA-96-readonly-inputs.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
