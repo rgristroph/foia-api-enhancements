@@ -1,69 +1,35 @@
 <div class=WordSection1>
 
-<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
-line-height:107%;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
-color:black'>3. Agency Component Abbreviations<o:p></o:p></span></p>
+<p class=MsoNormal>3. Agency Component Abbreviations<o:p></o:p></p>
 
 </div>
 
-<span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-font-family:"Times New Roman";mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";color:black;mso-ansi-language:
-EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br clear=all
-style='page-break-before:auto;mso-break-type:section-break'>
-</span>
+<br clear=all>
 
 <div class=WordSection2>
 
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=501
- style='width:501.0pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-border-top-alt:solid #0F243E .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0in 0in 0in 0in;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
- .5pt solid windowtext'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td width=142 style='width:142.0pt;border:solid windowtext 1.0pt;border-top:
-  solid #0F243E 1.0pt;mso-border-alt:solid windowtext .5pt;mso-border-top-alt:
-  solid #0F243E .5pt;padding:0in 0in 0in 0in'>
-  <p class=MsoNormal align=center style='margin-bottom:6.0pt;mso-para-margin-bottom:
-  .5gd;text-align:center'><a name="RANGE!C15:D15"><span style='font-size:10.0pt;
-  mso-bidi-font-size:9.0pt;line-height:107%;font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-bidi-font-weight:bold'>Component Abbreviation</span></a><span
-  style='font-size:10.0pt;mso-bidi-font-size:9.0pt;line-height:107%;font-family:
-  Arial;mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=501>
+ <tr >
+  <td width=142 >
+  <p class=MsoNormal align=center ><a name="RANGE!C15:D15">Component Abbreviation</a><o:p></o:p></p>
   </td>
-  <td width=359 style='width:359.0pt;border-top:solid #0F243E 1.0pt;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid #0F243E .5pt;padding:0in 0in 0in 0in'>
-  <p class=MsoNormal align=center style='margin-bottom:6.0pt;mso-para-margin-bottom:
-  .5gd;text-align:center'><span style='font-size:10.0pt;mso-bidi-font-size:
-  9.0pt;line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;
-  color:black;mso-bidi-font-weight:bold'>Component Name<o:p></o:p></span></p>
+  <td width=359 >
+  <p class=MsoNormal align=center >Component Name<o:p></o:p></p>
   </td>
  </tr>
 <!-- Rows 3. Agency Component Abbreviations -->
 {% for key,value in content.field_agency_components if key|first != '#' %}
- <tr style='mso-yfti-irow:1'>
-  <td nowrap valign=bottom style='border:solid windowtext 1.0pt;border-top:
-  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0in 0in 0in 0in'>
-  <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><a
-  name="RANGE!C16:C48"><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;
-  line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+ <tr >
+  <td nowrap valign=bottom >
+  <p class=MsoNormal ><a
+  name="RANGE!C16:C48">
   {{ content.field_agency_components[key]['#node'].field_agency_comp_abbreviation.value }} 
-  </span></a><span
-  style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-  font-family:Arial;mso-bidi-font-family:Arial;color:black'><o:p></o:p></span></p>
+  </a><o:p></o:p></p>
   </td>
-  <td nowrap valign=bottom style='border-top:none;border-left:none;border-bottom:
-  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
-  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0in 0in 0in 0in'>
-  <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><span
-  style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-  font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+  <td nowrap valign=bottom >
+  <p class=MsoNormal >
   {{ content.field_agency_components[key]['#node'].title.0.value }}
-  <o:p></o:p></span></p>
+  <o:p></o:p></p>
   </td>
  </tr>
 {% endfor %}
@@ -73,10 +39,5 @@ style='page-break-before:auto;mso-break-type:section-break'>
 
 </div>
 
-<span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-font-family:Arial;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:black;mso-ansi-language:EN-US;mso-fareast-language:
-EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always;
-mso-break-type:section-break'>
-</span>
+<br clear=all >
 
