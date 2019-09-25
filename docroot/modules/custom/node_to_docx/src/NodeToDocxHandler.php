@@ -29,11 +29,11 @@ class NodeToDocxHandler implements ContainerAwareInterface {
       $filename = $node->id() . '-' . str_replace('/', '-', $node->getTitle());
       $view = node_view($node, 'node_to_docx');
       // The following line should cause the templates in this module to be
-      // used, but no table tags appear if you do this.
-      // $view['#theme'] = 'node_to_docx'; No table tags.
+      // used.
+      $view['#theme'] = 'node_to_docx';
       $drupalMarkup = \Drupal::service('renderer')->render($view);
       // Debugging hint:
-      // file_put_contents('/var/www/foia/docroot/debug.html', $drupalMarkup);.
+      file_put_contents('/var/www/foia/docroot/debug.html', $drupalMarkup);
       $this->generateDocxFromHtml($drupalMarkup->__toString(), $filename);
       return new RedirectResponse(\Drupal::url('entity.node.canonical', ['node' => $node->id()]));
     }
