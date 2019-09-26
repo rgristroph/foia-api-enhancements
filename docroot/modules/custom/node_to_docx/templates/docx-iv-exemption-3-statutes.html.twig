@@ -105,7 +105,7 @@ mso-break-type:section-break'>
   <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><span
   style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
   font-family:Arial;mso-bidi-font-family:Arial;color:black'>
-  {{ content.field_statute_iv[key].field_statute }} RGR
+  {{ content.field_statute_iv[key]['#paragraph'].field_statute[0].value }}
   <o:p></o:p></span></p>
   </td>
   <td width=161 valign=top style='width:161.0pt;border-top:none;border-left:
@@ -114,8 +114,9 @@ mso-break-type:section-break'>
   mso-border-alt:solid windowtext .5pt;padding:0in 0in 0in 0in'>
   <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><span
   style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-  font-family:Arial;mso-bidi-font-family:Arial;color:black'>Confidential
-  financial disclosure report pertaining to certain government employees <o:p></o:p></span></p>
+  font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+  {{ content.field_statute_iv[key]['#paragraph'].field_type_of_info_withheld[0].value }}
+  <o:p></o:p></span></p>
   </td>
   <td width=161 valign=top style='width:161.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -123,12 +124,9 @@ mso-break-type:section-break'>
   mso-border-alt:solid windowtext .5pt;padding:0in 0in 0in 0in'>
   <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><span
   class=SpellE><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;
-  line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black'>Meyerhoff</span></span><span
-  style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-  font-family:Arial;mso-bidi-font-family:Arial;color:black'> v. EPA, 958 F.2d
-  1498, 1500-02 (9th Cir. 1992); Boyd v. Exec. Office for U.S. Attorneys, 161
-  F. Supp. 3d 1, 7 (D.D.C. 2015); <span class=SpellE>Seife</span> v. NIH, 874
-  F. Supp. 2d 248, 254 (S.D.N.Y. 2012).<o:p></o:p></span></p>
+  line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+  {{ content.field_statute_iv[key]['#paragraph'].field_case_citation[0].value  }}
+  <o:p></o:p></span></p>
   </td>
   <td width=67 nowrap valign=top style='width:67.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -136,7 +134,9 @@ mso-break-type:section-break'>
   mso-border-alt:solid windowtext .5pt;padding:0in 0in 0in 0in'>
   <p class=MsoNormal style='margin-bottom:6.0pt;mso-para-margin-bottom:.5gd'><span
   style='font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:107%;
-  font-family:Arial;mso-bidi-font-family:Arial;color:black'>AF<o:p></o:p></span></p>
+  font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+  {{ content.field_agency_components[key]['#node'].field_agency_comp_abbreviation.value }}
+  <o:p></o:p></span></p>
   </td>
   <td width=67 nowrap valign=top style='width:67.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -144,7 +144,9 @@ mso-break-type:section-break'>
   mso-border-alt:solid windowtext .5pt;padding:0in 0in 0in 0in'>
   <p class=MsoNormal align=right style='margin-bottom:6.0pt;mso-para-margin-bottom:
   .5gd;text-align:right'><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;
-  line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black'>1<o:p></o:p></span></p>
+  line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black'>
+  {{ content.field_statute_iv[0]['#paragraph'].field_agency_component_inf[0].entity.field_num_relied_by_agency_comp[0].value}}
+  <o:p></o:p></span></p>
   </td>
   <td width=67 nowrap rowspan=2 style='width:67.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -153,7 +155,9 @@ mso-break-type:section-break'>
   <p class=MsoNormal align=right style='margin-bottom:6.0pt;mso-para-margin-bottom:
   .5gd;text-align:right'><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;
   line-height:107%;font-family:Arial;mso-bidi-font-family:Arial;color:black;
-  mso-bidi-font-weight:bold'>2<o:p></o:p></span></p>
+  mso-bidi-font-weight:bold'>
+  {{ content.field_statute_iv[key]['#paragraph'].field_total_num_relied_by_agency[0].value }}
+  <o:p></o:p></span></p>
   </td>
  </tr>
 {% endfor %}

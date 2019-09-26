@@ -51,6 +51,7 @@
         "drupal/tablefield": "^2.0@alpha",
         "drupal/title_field_for_manage_display": "^1.9",
         "drupal/twig_tweak": "^2.4",
+        "drupal/twig_vardumper": "^1.2",
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_data_export": "^1.0",
         "drupal/webform": "^5.2",
