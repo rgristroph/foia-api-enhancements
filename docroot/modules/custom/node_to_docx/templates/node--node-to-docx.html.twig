@@ -53,14 +53,6 @@ p.MsoNormal {
 }
 </style>
 
-
-<hr>
-{# {{ drupal_entity('paragraph', content.field_statute_iv[0]['#paragraph'].field_agency_component_inf[0]['#values'].target_id) }} #}
-<hr>
-{# {{ vardumper( content.field_statute_iv[0]['#paragraph'].field_agency_component_inf[0].entity.field_num_relied_by_agency_comp ) }} #}
-<hr>
-{# {{ content.field_statute_iv[0]['#paragraph'].field_agency_component_inf[0].entity.field_num_relied_by_agency_comp[0].value }} #}
-<hr>
 {% include '@node_to_docx/docx-agency-component-abbrev.html.twig' %}
 
 {% include '@node_to_docx/docx-iv-exemption-3-statutes.html.twig' %}
