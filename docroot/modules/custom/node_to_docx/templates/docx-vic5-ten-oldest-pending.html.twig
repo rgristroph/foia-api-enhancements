@@ -10,1503 +10,235 @@ OLDEST PENDING ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
 
 <div class=WordSection37>
 
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=736>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=570>
  <tr >
-  <td width=87 >
-  <p class=MsoNormal align=center ><a name="RANGE!M7:X7">Agency / Component</a><o:p></o:p></p>
+  <td width=31 >
+  <p class=MsoNormal align=center >Agency / Component<o:p></o:p></p>
   </td>
-  <td width=109 >
+  <td width=49 >
   <p class=MsoNormal align=center >&nbsp;<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >10th Oldest Appeal<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >9th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >8th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >7th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >6th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >5th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >4th<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >3rd<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >2nd<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Oldest Appeal<o:p></o:p></p>
   </td>
  </tr>
+
+{% for key,value in content.field_admin_app_vic5 if key|first != '#' %}
  <tr >
   <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >AF<o:p></o:p></p>
+  <p class=MsoNormal >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_agency_component[0].entity.field_agency_comp_abbreviation.value }}
+  <o:p></o:p></p>
   </td>
-  <td width=109 >
+  <td >
   <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-06-14<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_10.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-03-24<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_9.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-03-10<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_8.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-01-08<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_7.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-08-06<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_6.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-05-21<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_5.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-02-14<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_4.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-02-12<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_3.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2011-10-04<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_2.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2011-04-29<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_date_1.value }}
+  <o:p></o:p></p>
   </td>
  </tr>
  <tr >
-  <td width=109 >
+  <td >
   <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1077<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_10.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1136<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_9.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1146<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_8.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1187<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_7.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1292<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_6.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1345<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_5.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1412<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_4.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1414<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_3.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1753<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_2.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1862<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic5[key]['#paragraph'].field_num_days_1.value }}
+  <o:p></o:p></p>
   </td>
  </tr>
+{% endfor %}
+
  <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >ASBCA<o:p></o:p></p>
+  <td rowspan=2 >
+  <p class=MsoNormal align=center >AGENCY OVERALL<o:p></o:p></p>
   </td>
-  <td width=109 >
+  <td >
   <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_10 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_9 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_8 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_7 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_6 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_5 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_4 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_3 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_2 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_date_1 }}<o:p></o:p></p>
   </td>
  </tr>
  <tr >
-  <td width=109 >
+  <td >
   <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_10 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_9 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_8 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_7 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_6 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_5 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_4 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_3 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_2 }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >ARMY<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-06-05<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-06-02<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-05-16<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-05-05<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-03-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-02-09<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-02-09<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-02-09<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-02-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-02-02<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >833<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >836<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >846<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >855<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >894<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >915<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >915<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >915<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >916<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >920<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DCAA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DCMA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-12<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-10-03<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >141<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >248<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DeCA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DFAS<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DHA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-10-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-10-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-08-01<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-05-08<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-02-17<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-01-19<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-03-22<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-03-17<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-02-26<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-06-22<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >245<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >245<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >292<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >351<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >406<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >427<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >635<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >638<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >652<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >822<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DIA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-04-22<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-01-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-01-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-01-02<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-11-12<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-07-30<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-06-04<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2013-04-15<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2012-10-03<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2012-05-02<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1115<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1189<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1189<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1191<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1225<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1297<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1336<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1371<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1501<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1608<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DISA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-04-04<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >124<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DLA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-05-07<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-04-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-04-16<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-10-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-10-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-09-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-07-18<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-06-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-06-20<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >101<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >111<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >116<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >145<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >243<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >243<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >264<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >302<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >320<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >321<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DoD IG<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-08-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-07-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-04-18<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-09-12<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-08-29<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-07-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-07-06<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >136<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >136<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >136<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >287<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >317<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >371<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >517<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >527<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >552<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >562<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DSS<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >DTRA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-01-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-11-18<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >425<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >719<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >Navy<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-03-21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-11-08<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-09-14<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >134<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >223<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >261<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >NGA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-02-07<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-08-08<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-05-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-08-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-02-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-02-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-10-28<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-10-01<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-09-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-08-13<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >163<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >287<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >348<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >527<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >662<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >662<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >984<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1002<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1008<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1036<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >NRO<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >N/A<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-12-19<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >196<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >NSA<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-08-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2018-04-02<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-09-16<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2017-04-27<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-11-01<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2016-08-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2015-12-23<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-08-22<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-05-07<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2014-04-10<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >38<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >126<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >259<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >358<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >479<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >535<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >695<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1029<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1104<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1123<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap rowspan=2 valign=bottom >
-  <p class=MsoNormal >OSD/JS<o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-07-16<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-07-09<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-06-26<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-03-10<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-02-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-01-28<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-01-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-10-01<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-09-17<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-08-26<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2310<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2315<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2323<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2400<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2418<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2428<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2443<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2507<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2517<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2532<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=87 rowspan=2 >
-  <p class=MsoNormal align=center ><a name="RANGE!M46:X47">AGENCY OVERALL</a><o:p></o:p></p>
-  </td>
-  <td width=109 >
-  <p class=MsoNormal align=center >Date of Appeal<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-07-16<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-07-09<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-06-26<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-03-10<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-02-11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-01-28<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2009-01-06<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-10-01<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-09-17<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2008-08-26<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=109 >
-  <p class=MsoNormal align=center >Number of Days Pending<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2310<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2315<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2323<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2400<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2418<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2428<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2443<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2507<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2517<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2532<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic5_num_day_1 }}<o:p></o:p></p>
   </td>
  </tr>
 </table>
@@ -1517,25 +249,10 @@ OLDEST PENDING ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
 
 <div class=WordSection38>
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=535>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=570>
  <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal><a name="RANGE!M51"><i >&nbsp;</i></a><i><o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >&nbsp;<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >&nbsp;<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal><a name="RANGE!M54"><i >&nbsp;</i></a><i><o:p></o:p></i></p>
+  <td nowrap valign=bottom >
+  <p class=MsoNormal><i >{{ docx.field_footnotes_vic5  }}</i><o:p></o:p></p>
   </td>
  </tr>
 </table>
