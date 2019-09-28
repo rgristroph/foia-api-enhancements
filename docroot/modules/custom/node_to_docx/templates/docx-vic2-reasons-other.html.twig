@@ -10,806 +10,149 @@ REASONS FOR DENIAL ON APPEAL -- REASONS OTHER THAN EXEMPTIONS<o:p></o:p></b></p>
 
 <div class=WordSection28>
 
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=681>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=570>
  <tr >
-  <td width=87 >
-  <p class=MsoNormal align=center ><a name="RANGE!N7:Y7">Agency / Component</a><o:p></o:p></p>
+  <td width=31 >
+  <p class=MsoNormal align=center >Agency / Component<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >No Records<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Records Referred at Initial Request
   Level<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Request Withdrawn<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Fee-Related Reason<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Records not Reasonably Described<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Improper Request for Other Reasons<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Not Agency Record<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Duplicate Request or Appeal<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Request in Litigation<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Appeal Based Solely on Denial of
   Request for Expedited Processing<o:p></o:p></p>
   </td>
-  <td width=54 >
+  <td width=49 >
   <p class=MsoNormal align=center >Other *Explain in chart below<o:p></o:p></p>
   </td>
  </tr>
+
+{% for key,value in content.field_admin_app_vic2 if key|first != '#' %}
  <tr >
   <td nowrap valign=bottom >
-  <p class=MsoNormal ><a
-  name="RANGE!N8:N27">AF</a><o:p></o:p></p>
+  <p class=MsoNormal >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_agency_component[0].entity.field_agency_comp_abbreviation.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >4<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_no_rec.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_rec_refer_initial.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >16<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_req_withdrawn.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_fee_related_reason.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_rec_not_desc.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >7<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_imp_req_oth_reason.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_not_agency_record.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_dup_req.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_req_in_lit.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_app_denial_exp.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right ><a name="RANGE!Y8:Y27">7</a><o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic2[key]['#paragraph'].field_oth.value }}
+  <o:p></o:p></p>
   </td>
  </tr>
+{% endfor %}
+
  <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >ASBCA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >ARMY<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >27<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DCAA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DCMA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DeCA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DFAS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DHA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >10<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DIA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >13<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DISA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DLA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DOD IG<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >10<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DSS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DTRA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >Navy<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >11<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >26<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >19<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >78<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NGA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NRO<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >4<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NSA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >6<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >6<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >5<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >OSD/JS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >17<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >3<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >21<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >19<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >19<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td width=87 >
-  <p class=MsoNormal align=center ><a name="RANGE!N27:Y27">AGENCY OVERALL</a><o:p></o:p></p>
+  <td >
+  <p class=MsoNormal align=center >AGENCY OVERALL<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >65<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_no_rec }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >4<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_rec_refer_ini }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >78<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_req_withdrawn }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >21<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_fee_rel_reas }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >2<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_rec_not_desc }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >47<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_imp_req_oth }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >9<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_not_agency_re }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >11<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_dup_req }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >25<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_req_in_lit }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >29<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_app_denial_ex }}<o:p></o:p></p>
   </td>
   <td nowrap >
-  <p class=MsoNormal align=right >122<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic2_oth }}<o:p></o:p></p>
   </td>
  </tr>
 </table>
@@ -820,25 +163,10 @@ REASONS FOR DENIAL ON APPEAL -- REASONS OTHER THAN EXEMPTIONS<o:p></o:p></b></p>
 
 <div class=WordSection29>
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=535>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=570>
  <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal align=center ><a name="RANGE!N31"><i>&nbsp;</i></a><i ><o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >&nbsp;<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >&nbsp;<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal align=center ><a name="RANGE!N34"><i>&nbsp;</i></a><i ><o:p></o:p></i></p>
+  <td width=570 nowrap valign=bottom >
+  <p class=MsoNormal align=left ><i>{{ docx.field_footnotes_vic2 }}</i><o:p></o:p></p>
   </td>
  </tr>
 </table>
@@ -847,4 +175,3 @@ REASONS FOR DENIAL ON APPEAL -- REASONS OTHER THAN EXEMPTIONS<o:p></o:p></b></p>
 
 <i ><br clear=all >
 </i>
-
