@@ -13,7 +13,7 @@ RESPONSE TIME FOR ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=570>
  <tr >
   <td width=114 >
-  <p class=MsoNormal align=center ><a name="RANGE!G7:K7">Agency / Component</a><o:p></o:p></p>
+  <p class=MsoNormal align=center >Agency / Component<o:p></o:p></p>
   </td>
   <td width=114 >
   <p class=MsoNormal align=center >Median Number of Days<o:p></o:p></p>
@@ -28,344 +28,52 @@ RESPONSE TIME FOR ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
   <p class=MsoNormal align=center >Highest Number of Days<o:p></o:p></p>
   </td>
  </tr>
+
+{% for key,value in content.field_admin_app_vic4 if key|first != '#' %}
  <tr >
   <td nowrap valign=bottom >
-  <p class=MsoNormal >AF<o:p></o:p></p>
+  <p class=MsoNormal >
+  {{ content.field_admin_app_vic4[key]['#paragraph'].field_agency_component[0].entity.field_agency_comp_abbreviation.value }} 
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >57.00<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic4[key]['#paragraph'].field_med_num_days.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >178.00<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic4[key]['#paragraph'].field_avg_num_days.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >6.00<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic4[key]['#paragraph'].field_low_num_days.value }}
+  <o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >981.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >ASBCA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
+  <p class=MsoNormal align=right >
+  {{ content.field_admin_app_vic4[key]['#paragraph'].field_high_num_days.value }}
+  <o:p></o:p></p>
   </td>
  </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >ARMY<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >509.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >497.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >982.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DCAA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DCMA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >141.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >141.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >126.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >155.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DeCA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DFAS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >29.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >20.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >31.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DHA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >535.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >671.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >83.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1,584.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DIA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >235.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >408.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1,550.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DISA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >29.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >29.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >10.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >47.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DLA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >91.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >141.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >15.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >462.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DOD IG<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >35.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >55.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >310.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DSS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >DTRA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >496.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >522.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >366.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >728.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >Navy<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >18.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >18.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >142.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NGA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >0.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NRO<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >64.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >116.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >15.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >513.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >NSA<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >15.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >99.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1,176.00<o:p></o:p></p>
-  </td>
- </tr>
- <tr >
-  <td nowrap valign=bottom >
-  <p class=MsoNormal >OSD/JS<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >37.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >350.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >1.00<o:p></o:p></p>
-  </td>
-  <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >2,711.00<o:p></o:p></p>
-  </td>
- </tr>
+{% endfor %}
+
  <tr >
   <td width=114 >
-  <p class=MsoNormal align=center ><a name="RANGE!G27:K27">AGENCY OVERALL</a><o:p></o:p></p>
+  <p class=MsoNormal align=center >AGENCY OVERALL<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >123.84<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic4_med_num_days }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >177.21<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic4_avg_num_days }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >32.95<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic4_low_num_days }}<o:p></o:p></p>
   </td>
   <td nowrap valign=bottom >
-  <p class=MsoNormal align=right >625.42<o:p></o:p></p>
+  <p class=MsoNormal align=right >{{ docx.field_overall_vic4_high_num_days }}<o:p></o:p></p>
   </td>
  </tr>
 </table>
@@ -376,28 +84,10 @@ RESPONSE TIME FOR ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
 
 <div class=WordSection35>
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=535>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=570>
  <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal><a name="RANGE!G31"><i >&nbsp;</i></a><i><o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >Due to its decentralized program,
-  DoD is unable to calculate an Agency Overall
-  Median.&nbsp; The numbers for this
-  section are the average of each column.<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 valign=bottom >
-  <p class=MsoNormal><i >&nbsp;<o:p></o:p></i></p>
-  </td>
- </tr>
- <tr >
-  <td width=535 nowrap valign=bottom >
-  <p class=MsoNormal><a name="RANGE!G34"><i >&nbsp;</i></a><i><o:p></o:p></i></p>
+  <td valign=bottom >
+  <p class=MsoNormal><i >{{ docx.field_footnotes_vic4 }}</i><o:p></o:p></p>
   </td>
  </tr>
 </table>
@@ -406,4 +96,3 @@ RESPONSE TIME FOR ADMINISTRATIVE APPEALS<o:p></o:p></b></p>
 
 <i ><br clear=all >
 </i>
-
