@@ -322,7 +322,6 @@ dependencies:
     - field.field.node.annual_foia_report_data.panelizer
     - node.type.annual_foia_report_data
   module:
-    - datetime
     - entity_reference_revisions
     - panelizer
     - text
@@ -440,13 +439,12 @@ content:
     type: entity_reference_label
     region: content
   field_date_prepared:
-    weight: 73
+    weight: 325
     label: above
     settings:
-      format_type: medium
-      timezone_override: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: datetime_default
+    type: string
     region: content
   field_fees_x:
     type: entity_reference_revisions_entity_view
@@ -2470,7 +2468,7 @@ content:
     type: number_integer
     region: content
   field_overall_x_perc_costs:
-    weight: 255
+    weight: 326
     label: above
     settings:
       thousand_separator: ''

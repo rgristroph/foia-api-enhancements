@@ -1,17 +1,4 @@
 (function ($, drupalSettings, Drupal) {
-  Drupal.behaviors.foia_ui_autocalc = {
-    attach: function attach() {
-      $("#edit-field-overall-ix-proc-costs-0-value, #edit-field-overall-x-total-fees-0-value").change(function() {
-        var overall_ix_proc_costs = Number($("#edit-field-overall-ix-proc-costs-0-value").val());
-        if ( overall_ix_proc_costs > 0 ) {
-          var overall_x_total_fees = Number($("#edit-field-overall-x-total-fees-0-value").val());
-          var overall_x_perc_costs = overall_x_total_fees / overall_ix_proc_costs;
-          var overall_x_perc_costs = Math.round(overall_x_perc_costs * 100) / 100; // Round to 2 decimal places
-          $('#edit-field-overall-x-perc-costs-0-value').val(overall_x_perc_costs);
-        }
-      });
-    }
-  },
   Drupal.behaviors.foia_ui_validation = {
     attach: function attach() {
       jQuery.validator.setDefaults({
@@ -20,14 +7,16 @@
       });
 
       /**
-       * Treat "N/A" or "n/a" values as zero
+       * Treat "N/A", "n/a", and "<1" values as zero
        */
-      function convertNAtoZero(value) {
-        if ( String(value).toLowerCase() == "n/a" ) {
-         return Number(0);
-        }
-        else {
-          return value;
+      function convertSpecialToZero(value) {
+        switch (String(value).toLowerCase()) {
+          case "n/a":
+          case "<1":
+            return Number(0);
+            break;
+          default:
+            return value;
         }
       }
 
@@ -42,14 +31,8 @@
 
       // lessThanEqualToNA
       $.validator.addMethod( "lessThanEqualToNA", function( value, element, param ) {
-        var target = $( param ).val();
-        // Treat N/A like 0.
-        if ( String(value).toLowerCase() == "n/a" ) {
-          value = Number(0);
-        }
-        if ( String(target).toLowerCase() == "n/a" ) {
-          target = Number(0);
-        }
+        var target = convertSpecialToZero($( param ).val());
+        value = convertSpecialToZero(value);
         return value <= Number(target);
     }, "Please enter a lesser value." );
 
@@ -106,14 +89,14 @@
 
       // lessThanEqualSumComp
       jQuery.validator.addMethod("lessThanEqualSumComp", function(value, element, params) {
-        value = convertNAtoZero(value);
+        value = convertSpecialToZero(value);
         var sum = 0;
         var elementAgencyComponent = $(element).parents('.paragraphs-subform').find("select[name*='field_agency_component']").val();
         for (var i = 0; i < params.length; i++){
           for (var j = 0; j < params[i].length; j++){
             var paramAgencyComponent = $(params[i][j]).parents('.paragraphs-subform').find("select[name*='field_agency_component']").val();
             if (paramAgencyComponent == elementAgencyComponent) {
-              sum += Number(convertNAtoZero($( params[i][j] ).val()));
+              sum += Number(convertSpecialToZero($( params[i][j] ).val()));
             }
           }
         }
@@ -134,12 +117,12 @@
 
       // lessThanEqualComp
       jQuery.validator.addMethod("lessThanEqualComp", function(value, element, params) {
-        value = convertNAtoZero(value);
+        value = convertSpecialToZero(value);
         var elementAgencyComponent = $(element).parents('.paragraphs-subform').find("select[name*='field_agency_component']").val();
         for (var i = 0; i < params.length; i++){
           var paramAgencyComponent = $(params[i]).parents('.paragraphs-subform').find("select[name*='field_agency_component']").val();
           if (paramAgencyComponent == elementAgencyComponent) {
-            var target = Number(convertNAtoZero($( params[i] ).val()));
+            var target = Number(convertSpecialToZero($( params[i] ).val()));
             return this.optional(element) || value <= target;
           }
         }
@@ -296,15 +279,37 @@
       // Disable Submit button until Validate button is clicked.
       $('input#edit-submit').prop('disabled', true);
       $('input#edit-validate-button').on('click', function(event) {
-        $(drupalSettings.foiaUI.foiaUISettings.formID).valid();
-        $('input#edit-submit').prop('disabled', false);
         event.preventDefault();
+
+        // To validate select drop-downs as required, they must have an
+        // empty machine value.
+        $("select > option[value='_none']").val('');
+
+        // Validate form
+        $(drupalSettings.foiaUI.foiaUISettings.formID).valid();
+
+        // Empty drop-downs can still be submitted though, so restore
+        // Drupal's default empty drop-down value to avoid "An illegal
+        // choice has been detected" error in that scenario.
+        $("select > option[value='']").val('_none');
+
+        // Enable form Save button
+        $('input#edit-submit').prop('disabled', false);
       });
 
       /**
        * Validation rules
+       *
+       * Note: All validation rules can be bypassed on submit.
        */
-      // V.A. FOIA Requests
+      // Require all Annual Report fields.
+      $(".form-text, .form-textarea, .form-select, .form-number, .form-date").not('#edit-revision-log-0-value').not('[readonly]').each(function() {
+        $(this).rules( "add", {
+        required: true,
+        });
+      });
+
+       // V.A. FOIA Requests
       $( "input[name*='field_foia_requests_va']").filter("input[name*='field_req_processed_yr']").each(function() {
         $(this).rules( "add", {
           equalToComp: $( "input[name*='field_foia_requests_vb1']").filter("input[name*='field_total']"),
@@ -423,11 +428,11 @@
         });
       });
 
-      // VI.C.(3). REASONS FOR DENIAL ON APPEAL -- "OTHER" REASONS
-      $( "#edit-field-overall-vic3-num-relied-up-0-value").rules( "add", {
+      // VI.C.(3). Agency Overall Total
+      $( "#edit-field-overall-vic3-total-0-value").rules( "add", {
         equalTo: "#edit-field-overall-vic2-oth-0-value",
         messages: {
-          equalTo: "Must match VI. C. (2) \"Agency Overall Other\""
+          equalTo: "Must match VI.C.(2) \"Agency Overall Other\""
         }
       });
 
@@ -543,19 +548,19 @@
       $( "#edit-field-overall-vic5-num-day-4-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-overall-vic5-num-day-3-0-value",
         messages: {
-          lessThanEqualToNA: "This should be less than the number of days for \"3d\"."
+          lessThanEqualToNA: "This should be less than the number of days for \"3rd\"."
         }
       });
 
-      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 3d
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 3rd
       $( "#edit-field-overall-vic5-num-day-3-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-overall-vic5-num-day-2-0-value",
         messages: {
-          lessThanEqualToNA: "This should be less than the number of days for \"2d\"."
+          lessThanEqualToNA: "This should be less than the number of days for \"2nd\"."
         }
       });
 
-      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 2d
+      // VI.C.(5). TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 2nd
       $( "#edit-field-overall-vic5-num-day-2-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-overall-vic5-num-day-1-0-value",
         messages: {
@@ -620,23 +625,23 @@
       $( "#edit-field-admin-app-vic5-0-subform-field-num-days-4-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-admin-app-vic5-0-subform-field-num-days-3-0-value",
         messages: {
-          lessThanEqualToNA: "This should be less than the number of days for \"3d\"."
+          lessThanEqualToNA: "This should be less than the number of days for \"3rd\"."
         }
       });
 
-      // VI.C.(5). (Component) TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 3d
+      // VI.C.(5). (Component) TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 3rd
       $( "#edit-field-admin-app-vic5-0-subform-field-num-days-3-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-admin-app-vic5-0-subform-field-num-days-2-0-value",
         messages: {
-          lessThanEqualToNA: "This should be less than the number of days for \"2d\"."
+          lessThanEqualToNA: "This should be less than the number of days for \"2nd\"."
         }
       });
 
-      // VI.C.(5). (Component) TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 2d
+      // VI.C.(5). (Component) TEN OLDEST PENDING ADMINISTRATIVE APPEALS / 2nd
       $( "#edit-field-admin-app-vic5-0-subform-field-num-days-2-0-value").rules( "add", {
         lessThanEqualToNA: "#edit-field-admin-app-vic5-0-subform-field-num-days-1-0-value",
         messages: {
-          lessThanEqualToNA: "This should be less than the number of days for \"Overall\"."
+          lessThanEqualToNA: "This should be less than the number of days for \"Oldest\"."
         }
       });
 

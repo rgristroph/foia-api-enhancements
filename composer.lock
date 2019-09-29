@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e21b96c05e80980aa41706732bf79fa3",
+    "content-hash": "781eb88c27967d1f66c01d7b93b5fbf1",
     "packages": [
         {
             "name": "acquia/blt",
@@ -9407,22 +9407,16 @@
         },
         {
             "name": "drupal/simplesamlphp_auth",
-            "version": "3.0.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simplesamlphp_auth.git",
-                "reference": "8.x-3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simplesamlphp_auth-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "2ee230173df2128edb5d72953222d229dabf27e7"
+                "reference": "4cb6fb8"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/externalauth": "*",
-                "simplesamlphp/simplesamlphp": "~1.15"
+                "drupal/externalauth": "^1.1",
+                "simplesamlphp/simplesamlphp": "~1.17.2"
             },
             "type": "drupal-module",
             "extra": {
@@ -9430,15 +9424,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1565118485",
+                    "version": "8.x-3.0+17-dev",
+                    "datestamp": "1564921985",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Fix local dev problem": "https://www.drupal.org/files/issues/2019-03-28/1.17.0-plus-conflict.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9475,7 +9466,8 @@
             "homepage": "https://www.drupal.org/project/simplesamlphp_auth",
             "support": {
                 "source": "https://git.drupalcode.org/project/simplesamlphp_auth"
-            }
+            },
+            "time": "2019-08-04T12:28:05+00:00"
         },
         {
             "name": "drupal/slick",
@@ -11458,13 +11450,13 @@
             "authors": [
                 {
                     "name": "Justin Bishop",
-                    "role": "Developer",
-                    "email": "jubishop@gmail.com"
+                    "email": "jubishop@gmail.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Anthon Pang",
-                    "role": "Fork Maintainer",
-                    "email": "apang@softwaredevelopment.ca"
+                    "email": "apang@softwaredevelopment.ca",
+                    "role": "Fork Maintainer"
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
@@ -19238,6 +19230,7 @@
         "drupal/reference_table_formatter": 5,
         "drupal/roleassign": 15,
         "drupal/rules": 15,
+        "drupal/simplesamlphp_auth": 20,
         "drupal/tablefield": 15,
         "drupal/view_unpublished": 15
     },
