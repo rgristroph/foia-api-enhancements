@@ -34,43 +34,49 @@
   </td>
  </tr>
 
-<!-- Rows Statutes -->
 {% for key,value in content.field_statute_iv if key|first != '#' %}
+  {% for subkey,subvalue in content.field_statute_iv[key]['#paragraph'].field_agency_component_inf if subkey|first != '#' %}
 
  <tr >
-  <td width=135 valign=top >
+  {% if not subkey %}
+  <td valign=top rowspan={{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf|length }}>
   <p class=MsoNormal >
   {{ content.field_statute_iv[key]['#paragraph'].field_statute[0].value }}
   <o:p></o:p></p>
   </td>
-  <td width=161 valign=top >
+  <td  valign=top rowspan={{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf|length }}>
   <p class=MsoNormal >
   {{ content.field_statute_iv[key]['#paragraph'].field_type_of_info_withheld[0].value }}
   <o:p></o:p></p>
   </td>
-  <td width=161 valign=top >
+  <td valign=top rowspan={{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf|length }}>
   <p class=MsoNormal >
   {{ content.field_statute_iv[key]['#paragraph'].field_case_citation[0].value  }}
   <o:p></o:p></p>
   </td>
-  <td width=67 nowrap valign=top >
+  {% endif %}
+  <td nowrap valign=top >
   <p class=MsoNormal >
-  {{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf[0].entity.field_agency_component[0].entity.field_agency_comp_abbreviation.value}}
+  {{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf[subkey].entity.field_agency_component[0].entity.field_agency_comp_abbreviation.value}}
   <o:p></o:p></p>
   </td>
-  <td width=67 nowrap >
+  <td nowrap >
   <p class=MsoNormal align=right >
-  {{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf[0].entity.field_num_relied_by_agency_comp[0].value}}
+  {{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf[subkey].entity.field_num_relied_by_agency_comp[0].value}}
   <o:p></o:p></p>
   </td>
-  <td width=67 nowrap >
+
+  {% if not subkey %}
+  <td nowrap rowspan={{ content.field_statute_iv[key]['#paragraph'].field_agency_component_inf|length }}>
   <p class=MsoNormal align=right >
   {{ content.field_statute_iv[key]['#paragraph'].field_total_num_relied_by_agency[0].value }}
   <o:p></o:p></p>
   </td>
+  {% endif %}
+  </tr>
+  {% endfor %}
  </tr>
 {% endfor %}
-<!-- End Rows Statutes -->
 </table>
 
 </div>
