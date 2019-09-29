@@ -1,18 +1,24 @@
-uuid: c90e59c8-9647-4388-a222-b7d1af0c9509
+uuid: c099550b-c05e-4eb0-8e51-a4304e662f8d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.node_to_docx
     - field.field.paragraph.foia_req_vb2.field_agency_component
     - field.field.paragraph.foia_req_vb2.field_foia_req_vb2_info
     - field.field.paragraph.foia_req_vb2.field_total
     - paragraphs.paragraphs_type.foia_req_vb2
   module:
     - entity_reference_revisions
-id: paragraph.foia_req_vb2.default
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.foia_req_vb2.node_to_docx
 targetEntityType: paragraph
 bundle: foia_req_vb2
-mode: default
+mode: node_to_docx
 content:
   field_agency_component:
     weight: 0

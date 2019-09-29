@@ -442,6 +442,33 @@ third_party_settings:
         caption: ''
         required_fields: false
       label: 'V.A. FOIA REQUESTS -- RECEIVED, PROCESSED AND PENDING FOIA REQUESTS'
+    group_v_b_1_disposition_of_foia_:
+      children:
+        - field_foia_requests_vb1
+      parent_name: ''
+      weight: 4
+      format_type: table
+      format_settings:
+        label: 'V.B.(1). DISPOSITION OF FOIA REQUESTS -- ALL PROCESSED REQUESTS'
+        fieldtitle: '1'
+        wrapper: '1'
+        caption: ''
+        id: ''
+        classes: ''
+      label: 'V.B.(1). DISPOSITION OF FOIA REQUESTS -- ALL PROCESSED REQUESTS'
+    group_v_b_2_disposition_of_foia_:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: table
+      format_settings:
+        id: ''
+        classes: ''
+        fieldtitle: 1
+        wrapper: '1'
+        caption: ''
+        required_fields: false
+      label: 'V.B.(2). DISPOSITION OF FOIA REQUESTS -- "OTHER" REASONS FOR "FULL DENIALS BASED ON REASONS OTHER THAN EXEMPTIONS"'
 id: node.annual_foia_report_data.node_to_docx
 targetEntityType: node
 bundle: annual_foia_report_data
@@ -472,7 +499,7 @@ content:
     region: content
   field_admin_app_vic1:
     type: entity_reference_revisions_entity_view
-    weight: 6
+    weight: 7
     region: content
     label: above
     settings:
@@ -481,7 +508,7 @@ content:
     third_party_settings: {  }
   field_admin_app_vic2:
     type: entity_reference_revisions_entity_view
-    weight: 37
+    weight: 38
     region: content
     label: above
     settings:
@@ -490,7 +517,7 @@ content:
     third_party_settings: {  }
   field_admin_app_vic3:
     type: entity_reference_revisions_entity_view
-    weight: 39
+    weight: 40
     region: content
     label: above
     settings:
@@ -508,7 +535,7 @@ content:
     region: content
   field_admin_app_vic5:
     type: entity_reference_revisions_entity_view
-    weight: 40
+    weight: 41
     region: content
     label: above
     settings:
@@ -525,7 +552,7 @@ content:
     third_party_settings: {  }
     region: content
   field_agency:
-    weight: 5
+    weight: 6
     label: above
     settings:
       link: true
@@ -600,7 +627,7 @@ content:
     region: content
     label: above
     settings:
-      view_mode: default
+      view_mode: node_to_docx
       link: ''
     third_party_settings: {  }
   field_foia_requests_vb2:
@@ -742,7 +769,7 @@ content:
     third_party_settings: {  }
   field_footnotes_vic1:
     type: twitter_embed
-    weight: 38
+    weight: 39
     region: content
     label: above
     settings: {  }
@@ -868,28 +895,28 @@ content:
     third_party_settings: {  }
   field_footnotes_xiib:
     type: twitter_embed
-    weight: 36
+    weight: 37
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiic:
     type: twitter_embed
-    weight: 21
+    weight: 22
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiid1:
     type: twitter_embed
-    weight: 35
+    weight: 36
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_footnotes_xiid2:
     type: twitter_embed
-    weight: 8
+    weight: 9
     region: content
     label: above
     settings: {  }
@@ -974,7 +1001,7 @@ content:
     region: content
   field_overall_req_pend_end_yr:
     type: number_integer
-    weight: 9
+    weight: 10
     region: content
     label: above
     settings:
@@ -983,7 +1010,7 @@ content:
     third_party_settings: {  }
   field_overall_req_pend_start_yr:
     type: number_integer
-    weight: 10
+    weight: 11
     region: content
     label: above
     settings:
@@ -992,7 +1019,7 @@ content:
     third_party_settings: {  }
   field_overall_req_processed_yr:
     type: number_integer
-    weight: 11
+    weight: 12
     region: content
     label: above
     settings:
@@ -1001,7 +1028,7 @@ content:
     third_party_settings: {  }
   field_overall_req_received_yr:
     type: number_integer
-    weight: 12
+    weight: 13
     region: content
     label: above
     settings:
@@ -1010,7 +1037,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_dup_request:
     type: number_integer
-    weight: 13
+    weight: 14
     region: content
     label: above
     settings:
@@ -1019,7 +1046,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_fee_related_re:
     type: number_integer
-    weight: 14
+    weight: 15
     region: content
     label: above
     settings:
@@ -1028,7 +1055,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_full_denials_e:
     type: number_integer
-    weight: 15
+    weight: 16
     region: content
     label: above
     settings:
@@ -1037,7 +1064,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_full_grants:
     type: number_integer
-    weight: 16
+    weight: 17
     region: content
     label: above
     settings:
@@ -1046,7 +1073,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_imp_req_oth_re:
     type: number_integer
-    weight: 17
+    weight: 18
     region: content
     label: above
     settings:
@@ -1055,7 +1082,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_no_rec:
     type: number_integer
-    weight: 18
+    weight: 19
     region: content
     label: above
     settings:
@@ -1064,7 +1091,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_not_agency_rec:
     type: number_integer
-    weight: 19
+    weight: 20
     region: content
     label: above
     settings:
@@ -1073,7 +1100,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_oth:
     type: number_integer
-    weight: 7
+    weight: 8
     region: content
     label: above
     settings:
@@ -1082,7 +1109,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_part_grants_de:
     type: number_integer
-    weight: 20
+    weight: 21
     region: content
     label: above
     settings:
@@ -1091,7 +1118,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_rec_not_desc:
     type: number_integer
-    weight: 30
+    weight: 31
     region: content
     label: above
     settings:
@@ -1100,7 +1127,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_rec_ref_to_an_:
     type: number_integer
-    weight: 34
+    weight: 35
     region: content
     label: above
     settings:
@@ -1109,7 +1136,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_req_withdrawn:
     type: number_integer
-    weight: 33
+    weight: 34
     region: content
     label: above
     settings:
@@ -1118,7 +1145,7 @@ content:
     third_party_settings: {  }
   field_overall_vb1_total:
     type: number_integer
-    weight: 32
+    weight: 33
     region: content
     label: above
     settings:
@@ -1127,7 +1154,7 @@ content:
     third_party_settings: {  }
   field_overall_vb2_total:
     type: number_integer
-    weight: 31
+    weight: 32
     region: content
     label: above
     settings:
@@ -1136,7 +1163,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_1:
     type: number_integer
-    weight: 22
+    weight: 23
     region: content
     label: above
     settings:
@@ -1145,7 +1172,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_2:
     type: number_integer
-    weight: 23
+    weight: 24
     region: content
     label: above
     settings:
@@ -1154,7 +1181,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_3:
     type: number_integer
-    weight: 24
+    weight: 25
     region: content
     label: above
     settings:
@@ -1163,7 +1190,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_4:
     type: number_integer
-    weight: 25
+    weight: 26
     region: content
     label: above
     settings:
@@ -1172,7 +1199,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_5:
     type: number_integer
-    weight: 26
+    weight: 27
     region: content
     label: above
     settings:
@@ -1181,7 +1208,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_6:
     type: number_integer
-    weight: 27
+    weight: 28
     region: content
     label: above
     settings:
@@ -1244,7 +1271,7 @@ content:
     region: content
   field_overall_vb3_ex_8:
     type: number_integer
-    weight: 28
+    weight: 29
     region: content
     label: above
     settings:
@@ -1253,7 +1280,7 @@ content:
     third_party_settings: {  }
   field_overall_vb3_ex_9:
     type: number_integer
-    weight: 29
+    weight: 30
     region: content
     label: above
     settings:
@@ -3037,7 +3064,7 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

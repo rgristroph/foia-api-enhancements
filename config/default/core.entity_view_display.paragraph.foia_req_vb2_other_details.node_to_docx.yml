@@ -1,22 +1,30 @@
-uuid: 7d69a3f5-7362-40b7-92ac-01e202086d1c
+uuid: 63e4956a-700e-4fb5-b5b4-5c4a8aab989a
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.node_to_docx
     - field.field.paragraph.foia_req_vb2_other_details.field_desc_oth_reasons
     - field.field.paragraph.foia_req_vb2_other_details.field_num_relied_upon
     - paragraphs.paragraphs_type.foia_req_vb2_other_details
-id: paragraph.foia_req_vb2_other_details.default
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.foia_req_vb2_other_details.node_to_docx
 targetEntityType: paragraph
 bundle: foia_req_vb2_other_details
-mode: default
+mode: node_to_docx
 content:
   field_desc_oth_reasons:
     weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_num_relied_upon:
     weight: 1

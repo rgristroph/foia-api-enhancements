@@ -127,6 +127,8 @@ text: 8.4.5
 title_field_for_manage_display: 1.9.0
 token: 1.1.0
 toolbar: 8.4.5
+twig_tweak: 2.4.0
+twig_vardumper: 1.2.0
 typed_data: 1.0.0-alpha1
 user: 8.4.5
 video_embed_field: 2.0.0-alpha2
