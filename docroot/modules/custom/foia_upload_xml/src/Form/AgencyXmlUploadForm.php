@@ -6,6 +6,7 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\user\Entity\User;
 
 /**
  * Class AgencyXmlUploadForm.
@@ -91,7 +92,14 @@ class AgencyXmlUploadForm extends FormBase {
     $file->save();
     $directory = 'temporary://foia-xml';
     file_prepare_directory($directory);
-    file_move($file, "$directory/report.xml", FILE_EXISTS_REPLACE);
+
+    // Get the user's agency abbreviation to put in the file name, so that
+    // simulataneous uploads don't wipe out each other's files.
+    $user = User::load(\Drupal::currentUser()->id());
+    $user_agency_nid = $user->get('field_agency')->target_id;
+
+    file_move($file, "$directory/report_" . date('Y') . "_" . $user_agency_nid
+      . ".xml", FILE_EXISTS_REPLACE);
 
     $batch = [
       'title' => $this->t('Importing Annual Report XML Data...'),
