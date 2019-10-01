@@ -40,6 +40,23 @@ class FoiaUploadXmlBatchImport {
   protected $user;
 
   /**
+   * The XML source file of the migration.
+   *
+   * @var string
+   */
+  protected $xmlSource;
+
+  /**
+   * Sets the XML source string.
+   *
+   * @param string $xml_source
+   *   The string filename of the XML source file.
+   */
+  public function setSource($xml_source) {
+    $this->xmlSource = $xml_source;
+  }
+
+  /**
    * Creates a FoiaUploadXmlBatchImport object.
    *
    * @param Drupal\Core\Messenger\MessengerInterface $messenger
@@ -69,8 +86,9 @@ class FoiaUploadXmlBatchImport {
     $this->messenger->addStatus($migration_list_item . ' in progress.');
     $context['sandbox']['current_migration'] = $migration_list_item;
 
-    $migration = $this->migrationPluginManager
-      ->createInstance($migration_list_item, $this->sourceOverrides());
+    $migration = $this->migrationPluginManager->createInstance(
+      $migration_list_item,
+      $this->sourceOverrides());
     $migration->getIdMap()->prepareUpdate();
     $executable = new MigrateExecutable($migration, new MigrateMessage());
     $executable->import();
@@ -98,6 +116,7 @@ class FoiaUploadXmlBatchImport {
       'constants' => [
         'user_id' => $this->user->id(),
       ],
+      'urls' => [$this->xmlSource],
     ];
 
     return ['source' => $source];

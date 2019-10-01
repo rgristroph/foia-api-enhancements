@@ -97,13 +97,13 @@ class AgencyXmlUploadForm extends FormBase {
     // simulataneous uploads don't wipe out each other's files.
     $user = User::load(\Drupal::currentUser()->id());
     $user_agency_nid = $user->get('field_agency')->target_id;
-
-    file_move($file, "$directory/report_" . date('Y') . "_" . $user_agency_nid
-      . ".xml", FILE_EXISTS_REPLACE);
+    $xml_upload_filename =
+      "$directory/report_" . date('Y') . "_" . $user_agency_nid . ".xml";
+    file_move($file, $xml_upload_filename, FILE_EXISTS_REPLACE);
 
     $batch = [
       'title' => $this->t('Importing Annual Report XML Data...'),
-      'operations' => $this->getBatchOperations(),
+      'operations' => $this->getBatchOperations($xml_upload_filename),
       'init_message' => $this->t('Commencing import'),
       'progress_message' => $this->t('Imported @current out of @total'),
       'error_message' => $this->t('An error occurred during import'),
@@ -201,15 +201,16 @@ class AgencyXmlUploadForm extends FormBase {
    * @return array
    *   Array of operations to execute via batch.
    */
-  protected function getBatchOperations() {
+  protected function getBatchOperations($xml_upload_filename) {
     $migrations_list = $this->getMigrationsList();
     $operations = [];
     foreach ($migrations_list as $migration_list_item) {
-      $operations[] = ['foia_upload_xml_execute_migration', [$migration_list_item]];
+      $operations[] = ['foia_upload_xml_execute_migration',
+        [$migration_list_item, $xml_upload_filename],
+      ];
     }
 
     return $operations;
-
   }
 
 }

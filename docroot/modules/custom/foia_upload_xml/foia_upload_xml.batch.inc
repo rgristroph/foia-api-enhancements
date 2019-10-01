@@ -15,8 +15,9 @@
  *
  * @throws \Drupal\migrate\MigrateException
  */
-function foia_upload_xml_execute_migration($migration_list_item, array &$context) {
+function foia_upload_xml_execute_migration($migration_list_item, $xml_source, array &$context) {
   $batch_import = \Drupal::service('foia_upload_xml.batch_import');
+  $batch_import->setSource($xml_source);
   $batch_import->executeMigration($migration_list_item, $context);
 }
 
