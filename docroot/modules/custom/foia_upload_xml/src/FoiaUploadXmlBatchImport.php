@@ -40,23 +40,6 @@ class FoiaUploadXmlBatchImport {
   protected $user;
 
   /**
-   * The XML source file of the migration.
-   *
-   * @var string
-   */
-  protected $xmlSource;
-
-  /**
-   * Sets the XML source string.
-   *
-   * @param string $xml_source
-   *   The string filename of the XML source file.
-   */
-  public function setSource($xml_source) {
-    $this->xmlSource = $xml_source;
-  }
-
-  /**
    * Creates a FoiaUploadXmlBatchImport object.
    *
    * @param Drupal\Core\Messenger\MessengerInterface $messenger
@@ -105,8 +88,8 @@ class FoiaUploadXmlBatchImport {
    * These values will be merged with the ones defined in the migration's YAML
    * file.
    *
-   * @todo Also override $source['urls'] when we upload the XML file as
-   * something other than report.xml.
+   * Note - attempts to override $source['urls'] here didn't work, instead we
+   * load, set the url, and save the migration configuration in the form.
    *
    * @return array
    *   A single key 'source', and the value is an array of overrides.
@@ -116,7 +99,6 @@ class FoiaUploadXmlBatchImport {
       'constants' => [
         'user_id' => $this->user->id(),
       ],
-      'urls' => [$this->xmlSource],
     ];
 
     return ['source' => $source];

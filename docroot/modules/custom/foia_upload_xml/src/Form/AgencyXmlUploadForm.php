@@ -7,6 +7,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\user\Entity\User;
+use Drupal\migrate_plus\Entity\Migration;
 
 /**
  * Class AgencyXmlUploadForm.
@@ -101,9 +102,19 @@ class AgencyXmlUploadForm extends FormBase {
       "$directory/report_" . date('Y') . "_" . $user_agency_nid . ".xml";
     file_move($file, $xml_upload_filename, FILE_EXISTS_REPLACE);
 
+    // Load the migrations, set them to use this new filename, and save them.
+    $migrations_list = $this->getMigrationsList();
+    foreach ($migrations_list as $migration_list_item) {
+      $migration = Migration::load($migration_list_item);
+      $source = $migration->get('source');
+      $source['urls'] = $xml_upload_filename;
+      $migration->set('source', $source);
+      $migration->save();
+    }
+
     $batch = [
       'title' => $this->t('Importing Annual Report XML Data...'),
-      'operations' => $this->getBatchOperations($xml_upload_filename),
+      'operations' => $this->getBatchOperations(),
       'init_message' => $this->t('Commencing import'),
       'progress_message' => $this->t('Imported @current out of @total'),
       'error_message' => $this->t('An error occurred during import'),
@@ -201,12 +212,12 @@ class AgencyXmlUploadForm extends FormBase {
    * @return array
    *   Array of operations to execute via batch.
    */
-  protected function getBatchOperations($xml_upload_filename) {
+  protected function getBatchOperations() {
     $migrations_list = $this->getMigrationsList();
     $operations = [];
     foreach ($migrations_list as $migration_list_item) {
       $operations[] = ['foia_upload_xml_execute_migration',
-        [$migration_list_item, $xml_upload_filename],
+        [$migration_list_item],
       ];
     }
 
