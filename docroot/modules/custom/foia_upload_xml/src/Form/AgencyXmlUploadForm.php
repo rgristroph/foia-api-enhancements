@@ -92,7 +92,7 @@ class AgencyXmlUploadForm extends FormBase {
     // If we do not use temporary, then we should add $file->setPermanent().
     $file->save();
     $directory = 'temporary://foia-xml';
-    file_prepare_directory($directory);
+    \Drupal::service('file_system')->prepareDirectory($directory, FILE_CREATE_DIRECTORY);
 
     // Get the user's agency abbreviation to put in the file name, so that
     // simulataneous uploads don't wipe out each other's files.
