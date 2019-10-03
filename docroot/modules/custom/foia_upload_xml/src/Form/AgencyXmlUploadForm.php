@@ -8,6 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\user\Entity\User;
 use Drupal\migrate_plus\Entity\Migration;
+use Drupal\migrate\Plugin\MigrationInterface;
 
 /**
  * Class AgencyXmlUploadForm.
@@ -87,7 +88,7 @@ class AgencyXmlUploadForm extends FormBase {
     $migration_clear = TRUE;
     $migration_running = '';
     foreach ($migrateStatusArr as $migration => $status) {
-      if ($status == '1') {
+      if ($status != MigrationInterface::STATUS_IDLE) {
         $migration_clear = FALSE;
         $migration_running = $migration;
       }
