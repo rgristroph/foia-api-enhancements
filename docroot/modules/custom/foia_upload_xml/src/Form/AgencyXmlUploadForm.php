@@ -81,6 +81,26 @@ class AgencyXmlUploadForm extends FormBase {
   /**
    * {@inheritdoc}
    */
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    $migrateStatus = \Drupal::keyValue('migrate_status');
+    $migrateStatusArr = $migrateStatus->getAll();
+    $migration_clear = TRUE;
+    $migration_running = '';
+    foreach ($migrateStatusArr as $migration => $status) {
+      if ($status == '1') {
+        $migration_clear = FALSE;
+        $migration_running = $migration;
+      }
+    }
+    if (!$migration_clear) {
+      $form_state->setErrorByName('submit',
+        $this->t("Another Agency's import is running; please re-submit in a few minutes."));
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $fid = $form_state->getValue(['agency_report_xml', 0]);
     if (empty($fid)) {
