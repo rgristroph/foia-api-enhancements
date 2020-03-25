@@ -8,7 +8,7 @@
         "php": ">=7.2",
         "acquia/blt": "^11.0",
         "acquia/drupal-spec-tool": "^2.0.0",
-        "acquia/lightning": "^3.4",
+        "acquia/lightning": "~4.1.0",
         "acquia/memcache-settings": "*",
         "composer/installers": "^1.7",
         "dompdf/dompdf": "^0.8.2",
@@ -21,7 +21,6 @@
         "drupal/autosave_form": "^1.0",
         "drupal/cog": "^1.8",
         "drupal/config_split": "^1.0.0",
-        "drupal/core": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/cors": "~1.0",
         "drupal/devel": "^2.0.0",
@@ -42,7 +41,7 @@
         "drupal/migrate_tools": "^4.0",
         "drupal/node_revision_delete": "^1.0@beta",
         "drupal/paragraphs": "^1.10",
-        "drupal/password_policy": "^3.0@alpha",
+        "drupal/password_policy": "3.x-dev",
         "drupal/qa_accounts": "^1.0.0-alpha1",
         "drupal/queue_ui": "^2.0",
         "drupal/restui": "^1.15",
@@ -107,8 +106,7 @@
                 "Fix type error in jsonapi, see https://www.drupal.org/project/drupal/issues/2996114": "https://www.drupal.org/files/issues/2019-12-03/2996114-99.patch"
             },
             "drupal/password_policy": {
-                "Config install issues": "https://www.drupal.org/files/issues/password-policy-config-import-field-error-2771129-49-D8.patch",
-                "Fix inconsistent date format issues": "https://www.drupal.org/files/issues/password_policy-inconsistent-datetime-formats-2860671-13-D8.patch"
+                "Config install issues": "https://www.drupal.org/files/issues/2020-03-20/password-policy-2771129-110.patch"
             },
             "drupal/views_data_export": {
                 "Views Data export format path": "https://www.drupal.org/files/issues/2018-04-20/views_data_export_format_path-2957085-19.patch"
